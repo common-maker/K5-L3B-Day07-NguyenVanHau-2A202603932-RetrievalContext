@@ -1,0 +1,335 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "How does the AI RMF define risk tolerance, and does the framework prescribe a specific acceptable risk level?",
+    "expected_answer": "Risk tolerance is an organization's or AI actor's readiness to bear risk in order to achieve its objectives; the AI RMF does not prescribe risk tolerance because it is contextual and application/use-case specific.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 12,
+        "evidence": "While the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance. Risk tolerance refers to the organization’s or AI actor’s (see Appendix A) readiness to bear the risk in order to achieve its objectives."
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Why can attempting to eliminate all negative AI risk completely be counterproductive in practice?",
+    "expected_answer": "Because not all incidents and failures can be eliminated, and unrealistic risk expectations can lead organizations to allocate resources in ways that make risk triage inefficient, impractical, or wasteful.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 12,
+        "evidence": "Attempting to eliminate negative risk entirely can be counterproductive in practice because not all incidents and failures can be eliminated. Unrealistic expectations about risk may lead organizations to allocate resources in a manner that makes risk triage inefficient or impractical or wastes scarce resources."
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "What organizational separation of duties is recommended as a best practice between those building AI models and those testing or validating them?",
+    "expected_answer": "As a best practice in the AI Model dimension, AI actors building and using models should be separated from those verifying and validating the models.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 16,
+        "evidence": "Note that AI actors in the AI Model dimension (Figure 2) are separated as a best practice, with those building and using the models separated from those verifying and validating the models."
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Beyond performing accurately under expected uses, what must a robust AI system do when operating in an unexpected setting?",
+    "expected_answer": "It should perform in ways that minimize potential harms to people if operating in an unexpected setting.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 19,
+        "evidence": "Robustness requires not only that the system perform exactly as it does under expected uses, but also that it should perform in ways that minimize potential harms to people if it is operating in an unexpected setting."
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "What distinct question does each of transparency, explainability, and interpretability answer for an AI system?",
+    "expected_answer": "Transparency answers 'what happened' in the system, explainability answers 'how' a decision was made, and interpretability answers 'why' a decision was made and its meaning or context to the user.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 22,
+        "evidence": "Transparency can answer the question of “what happened” in the system. Explainability can answer the question of “how” a decision was made in the system. Interpretability can answer the question of “why” a decision was made by the system and its meaning or context to the user."
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "What three categories of AI bias are identified, and does their presence require prejudice or discriminatory intent?",
+    "expected_answer": "The three categories are systemic, computational and statistical, and human-cognitive bias; each can occur even in the absence of prejudice, partiality, or discriminatory intent.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 23,
+        "evidence": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive. Each of these can occur in the absence of prejudice, partiality, or discriminatory intent."
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "When certain AI risks or trustworthiness characteristics cannot or will not be measured, what must be done with them?",
+    "expected_answer": "Risks or trustworthiness characteristics that will not or cannot be measured must be properly documented (along with explanations as to why some risks cannot be measured).",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 34,
+        "evidence": "The risks or trustworthiness characteristics that will not – or cannot – be measured are properly documented."
+      },
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 33,
+        "evidence": "MS-1.1-009 Track and document risks or opportunities related to all GAI risks that cannot be measured quantitatively, including explanations as to why some risks cannot be measured (e.g., due to technological limitations, resource constraints, or trustworthy considerations)."
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Even though pre-trained models and transfer learning can boost accuracy, what risks do they introduce compared to traditional software?",
+    "expected_answer": "They can increase statistical uncertainty and create challenges with bias management, scientific validity, reproducibility, and predicting failure modes of emergent properties.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 43,
+        "evidence": "Use of pre-trained models that can advance research and improve performance can also increase levels of statistical uncertainty and cause issues with bias management, scientific validity, and reproducibility."
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "What is confabulation in generative AI, and why does it occur naturally in models like LLMs?",
+    "expected_answer": "Confabulation is when GAI systems confidently generate erroneous or false content (or outputs diverging from prompts/context); it arises naturally because models approximate statistical training distributions (e.g., LLMs predicting the next token).",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 10,
+        "evidence": "Confabulations are a natural result of the way generative models are designed: they generate outputs that approximate the statistical distribution of their training data; for example, LLMs predict the next token or word in a sentence or phrase."
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "What caveat applies when using model distillation or compression to reduce the environmental footprint of generative AI?",
+    "expected_answer": "While model distillation or compression can reduce environmental impacts at inference time, training and tuning those smaller models may still contribute to environmental impacts.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 12,
+        "evidence": "Methods for creating smaller versions of trained models, such as model distillation or compression, could reduce environmental impacts at inference time, but training and tuning such models may still contribute to their environmental impacts."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Do all suggested generative AI risk-management actions apply equally to every AI actor, and how should organizations determine applicability?",
+    "expected_answer": "No; not every suggested action applies to every AI actor or task (for example, developer actions may not apply to deployers). Applicability must be determined from organizational considerations and unique uses of GAI systems.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 17,
+        "evidence": "Not every suggested action applies to every AI Actor14 or is relevant to every AI Actor Task. For example, suggested actions relevant to GAI developers may not be relevant to GAI deployers. The applicability of suggested actions to relevant AI actors should be determined based on organizational considerations and their unique uses of GAI systems."
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Under GOVERN 1.7, what factors should organizations consider when decommissioning a generative AI system?",
+    "expected_answer": "Organizations should consider data retention requirements, post-decommissioning data security and leakage containment, dependencies across upstream/downstream/IoT/AI systems, open-source data or models, and users' emotional entanglement.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 21,
+        "evidence": "GV-1.7-002 Consider the following factors when decommissioning GAI systems: Data retention requirements; Data security, e.g., containment, protocols, Data leakage after decommissioning; Dependencies between upstream, downstream, or other data, internet of things (IOT) or AI systems; Use of open-source data or models; Users’ emotional entanglement with GAI functions."
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "When evaluating safety under MEASURE 2.6, what failure behavior is required if a generative AI system operates past its knowledge limits?",
+    "expected_answer": "The system must be demonstrated to be safe, keep residual negative risk within tolerance, and fail safely, particularly if made to operate beyond its knowledge limits.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 36,
+        "evidence": "The AI system to be deployed is demonstrated to be safe, its residual negative risk does not exceed the risk tolerance, and it can fail safely, particularly if made to operate beyond its knowledge limits."
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Why are anecdotal tests like video games or human professional licensing exams insufficient to establish generative AI validity and reliability before deployment?",
+    "expected_answer": "Such anecdotal testing does not guarantee GAI system validity or reliability in those domains, and laboratory benchmarks often fail to extrapolate to real-world contexts due to prompt sensitivity and context heterogeneity.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 53,
+        "evidence": "For example, the anecdotal testing of GAI system capabilities through video games or standardized tests designed for humans (e.g., intelligence tests, professional licensing exams) does not guarantee GAI system validity or reliability in those domains."
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Under GOVERN 1.2, what transparency and safety evaluation policies should organizations establish for generative AI?",
+    "expected_answer": "Organizations should establish transparency policies documenting training and generated data origin/history (balancing proprietary training details) and policies for pre-deployment and ongoing internal/external safety evaluations.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 18,
+        "evidence": "GV-1.2-001 Establish transparency policies and processes for documenting the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches."
+      }
+    ],
+    "filter": {
+      "year": 2024,
+      "section": "govern"
+    }
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "In the 2023 AI RMF GOVERN section, how are governance roles divided across governing authorities, senior leadership, and management?",
+    "expected_answer": "Governing authorities set overarching policies for mission, goals, values, culture, and risk tolerance; senior leadership sets the organizational tone and culture for risk management; management aligns technical risk management with policies and operations.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 27,
+        "evidence": "Governing authorities can determine the overarching policies that direct an organization’s mission, goals, values, culture, and risk tolerance. Senior leadership sets the tone for risk management within an organization, and with it, organizational culture. Management aligns the technical aspects of AI risk management to policies and operations."
+      }
+    ],
+    "filter": {
+      "year": 2023,
+      "section": "govern"
+    }
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "What warning mechanisms and risk reassessment steps are recommended when adapting a generative AI model to a new domain?",
+    "expected_answer": "Organizations should re-evaluate risks when adapting GAI models to new domains and establish warning systems to detect usage in a new domain where prior context, security, or safety assumptions may no longer hold.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 30,
+        "evidence": "MP-4.1-008 Re-evaluate risks when adapting GAI models to new domains. Additionally, establish warning systems to determine if a GAI system is being used in a new domain where previous assumptions (relating to context of use or mapped risks such as security, and safety) may no longer hold."
+      }
+    ],
+    "filter": {
+      "document_type": "genai_profile",
+      "section": "map"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "How does the AI RMF distinguish between an AI system being resilient versus being secure?",
+    "expected_answer": "A system is resilient if it withstands unexpected adverse events or changes and degrades safely and gracefully; it is secure if it maintains confidentiality, integrity, and availability through protections against unauthorized access and use.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 20,
+        "evidence": "AI systems, as well as the ecosystems in which they are deployed, may be said to be resilient if they can withstand unexpected adverse events or unexpected changes in their environment or use – or if they can maintain their functions and structure in the face of internal and external change and degrade safely and gracefully when this is necessary"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "What operational evidence should organizations gather to evaluate how effectively humans challenge or override deployed AI outputs?",
+    "expected_answer": "Organizations can collect and analyze data on the frequency and rationale with which humans overrule AI system output in deployed systems.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 46,
+        "evidence": "Data about the frequency and rationale with which humans overrule AI system output in deployed systems may be useful to collect and analyze."
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "question": "How is unintentional false content (misinformation) distinguished from deliberate false content (disinformation) for generative AI systems?",
+    "expected_answer": "Misinformation refers to unintentional production or dissemination of false, inaccurate, or misleading content (often from confabulations), whereas disinformation involves deliberate production or dissemination with explicit intent to deceive or cause harm.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 14,
+        "evidence": "GAI systems can ease the unintentional production or dissemination of false, inaccurate, or misleading content (misinformation) at scale, particularly if the content stems from confabulations. GAI systems can also ease the deliberate production or dissemination of false or misleading information (disinformation) at scale, where an actor has the explicit intent to deceive or cause harm to others."
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "When tracking content provenance data under MEASURE, what three privacy and security practices should be considered to protect human subjects?",
+    "expected_answer": "Organizations should consider anonymizing data to protect human subjects' privacy, leveraging privacy output filters, and removing personally identifiable information (PII) to prevent potential harm or misuse.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 34,
+        "evidence": "MS-2.2-002 Document how content provenance data is tracked and how that data interacts with privacy and security. Consider: Anonymizing data to protect the privacy of human subjects; Leveraging privacy output filters; Removing any personally identifiable information (PII) to prevent potential harm or misuse."
+      }
+    ],
+    "filter": {
+      "year": 2024,
+      "section": "measure"
+    }
+  },
+  {
+    "id": "q22",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Within the core AI RMF MANAGE function, how is negative residual risk defined and to whom must it be documented?",
+    "expected_answer": "Negative residual risk is defined as the sum of all unmitigated risks, and it must be documented to both downstream acquirers of AI systems and end users.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 37,
+        "evidence": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented."
+      }
+    ],
+    "filter": {
+      "document_type": "core_framework",
+      "section": "manage"
+    }
+  }
+]

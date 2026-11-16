@@ -1,0 +1,1894 @@
+[
+  {
+    "query_id": "q18",
+    "split": "test",
+    "type": "truc_tiep",
+    "answerable": true,
+    "question": "How does the AI RMF distinguish between an AI system being resilient versus being secure?",
+    "filter": null,
+    "status": "answered",
+    "answer": "The AI RMF distinguishes resilience and security by defining resilience as the ability of an AI system to return to normal function after an unexpected adverse event. Security, on the other hand, includes resilience but also involves protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and encompasses unexpected or adversarial use or misuse of the model or data, while security is broader and includes these protective measures as well.[nist-ai-100-1:p020:para:002]",
+    "citations": [
+      "nist-ai-100-1:p020:para:002"
+    ],
+    "final_context": "[nist-ai-100-1:p020:para:002 | nist-ai-100-1 | p.20 | section=foundational | year=2023]\nSecurity and resilience are related but distinct characteristics. While resilience is the ability to return to normal function after an unexpected adverse event, security includes resilience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and goes beyond the provenance of the data to encompass unexpected or adversarial use (or abuse or misuse) of the model or data.",
+    "final_context_ids": [
+      "nist-ai-100-1:p020:para:002"
+    ],
+    "final_context_chars": 535,
+    "search_calls": 1,
+    "llm_calls": 2,
+    "prompt_tokens": 1533,
+    "completion_tokens": 156,
+    "cached_tokens": 0,
+    "chat_cost_usd": 0.000863,
+    "elapsed_ms": 7956.97,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "AI RMF resilience versus security distinction",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p020:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 20,
+            "text": "Security and resilience are related but distinct characteristics. While resilience is the ability to return to normal function after an unexpected adverse event, security includes resilience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and goes beyond the provenance of the data to encompass unexpected or adversarial use (or abuse or misuse) of the model or data.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "foundational",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3129,
+              "chunk_length": 447,
+              "document_type": "core_framework",
+              "normalized_chars": 3087
+            },
+            "score": 0.652348,
+            "cosine_distance": 0.347652,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p025:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 25,
+            "text": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions. AI RMF Core functions should be carried out in a way that reflects diverse and multidisciplinary perspectives, potentially including the views of AI actors outside the organization. Having a diverse team contributes to more open sharing of ideas and assumptions about purposes and functions of the technology being designed, developed,",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "foundational",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 1289,
+              "chunk_length": 442,
+              "document_type": "core_framework",
+              "normalized_chars": 1254
+            },
+            "score": 0.550337,
+            "cosine_distance": 0.449663,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p014:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 14,
+            "text": "Organizations need to establish and maintain the appropriate accountability mechanisms, roles and responsibilities, culture, and incentive structures for risk management to be effective. Use of the AI RMF alone will not lead to these changes or provide the appropriate incentives. Effective risk management is realized through organizational commitment at senior levels and may require cultural change within an organization or industry. In addition, small to medium-sized organizations managing AI risks or implementing the AI RMF may face different challenges than large organizations, depending on their capabilities and resources.\n\n2. Audience",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "foundational",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3058,
+              "chunk_length": 647,
+              "document_type": "core_framework",
+              "normalized_chars": 3018
+            },
+            "score": 0.550285,
+            "cosine_distance": 0.449715,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p020:para:002 | nist-ai-100-1 | p.20 | section=foundational | year=2023]\nSecurity and resilience are related but distinct characteristics. While resilience is the ability to return to normal function after an unexpected adverse event, security includes resilience but also encompasses protocols to avoid, protect against, respond to, or recover from attacks. Resilience relates to robustness and goes beyond the provenance of the data to encompass unexpected or adversarial use (or abuse or misuse) of the model or data.",
+        "context_ids": [
+          "nist-ai-100-1:p020:para:002"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "nist-ai-100-1:p020:para:002"
+        ]
+      }
+    ]
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "answerable": true,
+    "question": "What operational evidence should organizations gather to evaluate how effectively humans challenge or override deployed AI outputs?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF documents do not provide specific details on the operational evidence organizations should gather to evaluate how effectively humans challenge or override deployed AI outputs. Therefore, I must abstain from answering this question based on the available evidence.",
+    "citations": [],
+    "final_context": "[nist-ai-100-1:p006:para:003 | nist-ai-100-1 | p.6 | section=executive_summary | year=2023]\nThese risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+    "final_context_ids": [
+      "nist-ai-100-1:p006:para:003"
+    ],
+    "final_context_chars": 433,
+    "search_calls": 4,
+    "llm_calls": 5,
+    "prompt_tokens": 5481,
+    "completion_tokens": 162,
+    "cached_tokens": 2304,
+    "chat_cost_usd": 0.00176,
+    "elapsed_ms": 5922.65,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "operational evidence to evaluate how effectively humans challenge or override deployed AI outputs",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p006:para:003",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 6,
+            "text": "These risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "executive_summary",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3108,
+              "chunk_length": 341,
+              "document_type": "core_framework",
+              "normalized_chars": 3062
+            },
+            "score": 0.573668,
+            "cosine_distance": 0.426332,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p035:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 35,
+            "text": "MS-2.3-004 Utilize a purpose-built testing environment such as NIST Dioptra to empirically evaluate GAI trustworthy characteristics.\n\nCBRN Information or Capabilities; Data Privacy; Confabulation; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content; Harmful Bias and Homogenization\n\nAI Actor Tasks: AI Deployment, TEVV\n\nMEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the conditions under which the technology was developed are documented.\n\nAction ID Suggested Action Risks\n\nMS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments. Human-AI Configuration; Confabulation\n\nMS-2.5-002 Document the extent to which human domain knowledge is employed to improve GAI system performance, via, e.g., RLHF, fine-tuning, retrieval-augmented generation, content moderation, business rules.\n\nHuman-AI Configuration",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 1846,
+              "chunk_length": 982,
+              "document_type": "genai_profile",
+              "normalized_chars": 1829
+            },
+            "score": 0.569847,
+            "cosine_distance": 0.430153,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p021:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 21,
+            "text": "ple, how a human operator or user is notified when a potential or actual adverse outcome caused by an AI system is detected. A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "foundational",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2928,
+              "chunk_length": 364,
+              "document_type": "core_framework",
+              "normalized_chars": 2890
+            },
+            "score": 0.562629,
+            "cosine_distance": 0.437371,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p006:para:003 | nist-ai-100-1 | p.6 | section=executive_summary | year=2023]\nThese risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+        "context_ids": [
+          "nist-ai-100-1:p006:para:003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "evidence to evaluate human challenge or override of AI outputs",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p006:para:003",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 6,
+            "text": "These risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "executive_summary",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3108,
+              "chunk_length": 341,
+              "document_type": "core_framework",
+              "normalized_chars": 3062
+            },
+            "score": 0.58673,
+            "cosine_distance": 0.41327,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p035:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 35,
+            "text": "MS-2.3-004 Utilize a purpose-built testing environment such as NIST Dioptra to empirically evaluate GAI trustworthy characteristics.\n\nCBRN Information or Capabilities; Data Privacy; Confabulation; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content; Harmful Bias and Homogenization\n\nAI Actor Tasks: AI Deployment, TEVV\n\nMEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the conditions under which the technology was developed are documented.\n\nAction ID Suggested Action Risks\n\nMS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments. Human-AI Configuration; Confabulation\n\nMS-2.5-002 Document the extent to which human domain knowledge is employed to improve GAI system performance, via, e.g., RLHF, fine-tuning, retrieval-augmented generation, content moderation, business rules.\n\nHuman-AI Configuration",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 1846,
+              "chunk_length": 982,
+              "document_type": "genai_profile",
+              "normalized_chars": 1829
+            },
+            "score": 0.578429,
+            "cosine_distance": 0.421571,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p046:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 46,
+            "text": "The GOVERN and MAP functions describe the importance of interdisciplinarity and demographically diverse teams and utilizing feedback from potentially impacted individuals and communities. AI actors called out in the AI RMF who perform human factors tasks and activities can assist technical teams by anchoring in design and development practices to user intentions and representatives of the broader AI community, and societal values. These actors further help to incorporate context-specific norms and values in system design and evaluate end user experiences – in conjunction with AI systems.\n\nAI risk management approaches for human-AI configurations will be augmented by ongoing research and evaluation. For example, the degree to which humans are empowered and incentivized to challenge AI system output requires further studies. Data about the frequency and rationale with which humans overrule AI system output in deployed systems may be useful to collect and analyze.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "appendix",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2163,
+              "chunk_length": 975,
+              "document_type": "core_framework",
+              "normalized_chars": 2126
+            },
+            "score": 0.572962,
+            "cosine_distance": 0.427038,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p006:para:003 | nist-ai-100-1 | p.6 | section=executive_summary | year=2023]\nThese risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+        "context_ids": [
+          "nist-ai-100-1:p006:para:003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "operational evidence humans challenge override AI outputs",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p045:para:003",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 45,
+            "text": "3. Human-AI interaction results vary. Under certain conditions – for example, in perceptual-based judgment tasks – the AI part of the human-AI interaction can amplify human biases, leading to more biased decisions than the AI or human alone. When these variations are judiciously taken into account in organizing human-AI teams, however, they can result in complementarity and improved overall performance.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "appendix",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2703,
+              "chunk_length": 406,
+              "document_type": "core_framework",
+              "normalized_chars": 2666
+            },
+            "score": 0.547228,
+            "cosine_distance": 0.452772,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p021:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 21,
+            "text": "ple, how a human operator or user is notified when a potential or actual adverse outcome caused by an AI system is detected. A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "foundational",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2928,
+              "chunk_length": 364,
+              "document_type": "core_framework",
+              "normalized_chars": 2890
+            },
+            "score": 0.538552,
+            "cosine_distance": 0.461448,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p006:para:003",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 6,
+            "text": "These risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "executive_summary",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3108,
+              "chunk_length": 341,
+              "document_type": "core_framework",
+              "normalized_chars": 3062
+            },
+            "score": 0.527636,
+            "cosine_distance": 0.472364,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p006:para:003 | nist-ai-100-1 | p.6 | section=executive_summary | year=2023]\nThese risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+        "context_ids": [
+          "nist-ai-100-1:p006:para:003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "human override AI outputs operational evidence",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p031:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 31,
+            "text": "MAP 2.2: Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI actors when making decisions and taking subsequent actions.\n\nCategories Subcategories Continued on next page",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "map",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2094,
+              "chunk_length": 312,
+              "document_type": "core_framework",
+              "normalized_chars": 2060
+            },
+            "score": 0.516451,
+            "cosine_distance": 0.483549,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p035:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 35,
+            "text": "MS-2.3-004 Utilize a purpose-built testing environment such as NIST Dioptra to empirically evaluate GAI trustworthy characteristics.\n\nCBRN Information or Capabilities; Data Privacy; Confabulation; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content; Harmful Bias and Homogenization\n\nAI Actor Tasks: AI Deployment, TEVV\n\nMEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the conditions under which the technology was developed are documented.\n\nAction ID Suggested Action Risks\n\nMS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments. Human-AI Configuration; Confabulation\n\nMS-2.5-002 Document the extent to which human domain knowledge is employed to improve GAI system performance, via, e.g., RLHF, fine-tuning, retrieval-augmented generation, content moderation, business rules.\n\nHuman-AI Configuration",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 1846,
+              "chunk_length": 982,
+              "document_type": "genai_profile",
+              "normalized_chars": 1829
+            },
+            "score": 0.515257,
+            "cosine_distance": 0.484743,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p029:para:002",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 29,
+            "text": "MP-3.4-006 Involve the end-users, practitioners, and operators in GAI system in prototyping and testing activities. Make sure these tests cover various scenarios, such as crisis situations or ethically sensitive contexts.\n\nHuman-AI Configuration; Information Integrity; Harmful Bias and Homogenization; Dangerous, Violent, or Hateful Content\n\nAI Actor Tasks: AI Design, AI Development, Domain Experts, End-Users, Human Factors, Operation and Monitoring",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "map",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2296,
+              "chunk_length": 452,
+              "document_type": "genai_profile",
+              "normalized_chars": 2291
+            },
+            "score": 0.508782,
+            "cosine_distance": 0.491218,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p006:para:003 | nist-ai-100-1 | p.6 | section=executive_summary | year=2023]\nThese risks make AI a uniquely challenging technology to deploy and utilize both for organizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes.",
+        "context_ids": [
+          "nist-ai-100-1:p006:para:003"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF documents do not provide specific details on the operational evidence organizations should gather to evaluate how effectively humans challenge or override deployed AI outputs. Therefore, I must abstain from answering this question based on the available evidence."
+      }
+    ]
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "answerable": true,
+    "question": "How is unintentional false content (misinformation) distinguished from deliberate false content (disinformation) for generative AI systems?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF documents mention that generative AI systems can produce false or non-factual content, including confabulations and potentially dangerous outputs, but they do not explicitly define or distinguish unintentional false content (misinformation) from deliberate false content (disinformation) in generative AI systems. Therefore, there is insufficient evidence to answer the question based on the provided documents.",
+    "citations": [],
+    "final_context": "[nist-ai-600-1:p010:para:003 | nist-ai-600-1 | p.10 | section=genai_risks | year=2024]\nGAI systems can produce content that is inciting, radicalizing, or threatening, or that glorifies violence, with greater ease and scale than other technologies. LLMs have been reported to generate dangerous or violent recommendations, and some models have generated actionable instructions for dangerous or\n\n9 Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.\n\n10 For example, legal confabulations have been shown to be pervasive in current state-of-the-art LLMs. See also, e.g.,",
+    "final_context_ids": [
+      "nist-ai-600-1:p010:para:003"
+    ],
+    "final_context_chars": 703,
+    "search_calls": 3,
+    "llm_calls": 4,
+    "prompt_tokens": 4424,
+    "completion_tokens": 176,
+    "cached_tokens": 1152,
+    "chat_cost_usd": 0.001706,
+    "elapsed_ms": 4988.9,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "distinguish unintentional false content misinformation deliberate false content disinformation generative AI",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p014:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "GAI systems can ease the unintentional production or dissemination of false, inaccurate, or misleading content (misinformation) at scale, particularly if the content stems from confabulations. GAI systems can also ease the deliberate production or dissemination of false or misleading information (disinformation) at scale, where an actor has the explicit intent to deceive or cause harm to others. Even very subtle changes to text or images can manipulate human and machine perception. Similarly, GAI systems could enable a higher degree of sophistication for malicious actors to produce disinformation that is targeted towards specific demographics. Current and emerging multimodal models make it possible to generate both text-based disinformation and highly realistic “deepfakes” – that is, synthetic audiovisual content and photorealistic images.12 Additional disinformation threats could be enabled by future GAI models trained on new data modalities.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 957,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.686094,
+            "cosine_distance": 0.313906,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p014:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "Disinformation and misinformation – both of which may be facilitated by GAI – may erode public trust in true or valid evidence and information, with downstream effects. For example, a synthetic image of a Pentagon blast went viral and briefly caused a drop in the stock market. Generative AI models can also assist malicious actors in creating compelling imagery and propaganda to support disinformation campaigns, which may not be photorealistic, but could enable these campaigns to gain more reach and engagement on social media platforms. Additionally, generative AI models can assist malicious actors in creating fraudulent content intended to impersonate others.\n\nTrustworthy AI Characteristics: Accountable and Transparent, Safe, Valid and Reliable, Interpretable and Explainable\n\n2.9. Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 812,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.67416,
+            "cosine_distance": 0.32584,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p010:para:003",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 10,
+            "text": "GAI systems can produce content that is inciting, radicalizing, or threatening, or that glorifies violence, with greater ease and scale than other technologies. LLMs have been reported to generate dangerous or violent recommendations, and some models have generated actionable instructions for dangerous or\n\n9 Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.\n\n10 For example, legal confabulations have been shown to be pervasive in current state-of-the-art LLMs. See also, e.g.,",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3250,
+              "chunk_length": 616,
+              "document_type": "genai_profile",
+              "normalized_chars": 3218
+            },
+            "score": 0.573419,
+            "cosine_distance": 0.426581,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p010:para:003 | nist-ai-600-1 | p.10 | section=genai_risks | year=2024]\nGAI systems can produce content that is inciting, radicalizing, or threatening, or that glorifies violence, with greater ease and scale than other technologies. LLMs have been reported to generate dangerous or violent recommendations, and some models have generated actionable instructions for dangerous or\n\n9 Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.\n\n10 For example, legal confabulations have been shown to be pervasive in current state-of-the-art LLMs. See also, e.g.,",
+        "context_ids": [
+          "nist-ai-600-1:p010:para:003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "misinformation disinformation generative AI systems distinction",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p014:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "GAI systems can ease the unintentional production or dissemination of false, inaccurate, or misleading content (misinformation) at scale, particularly if the content stems from confabulations. GAI systems can also ease the deliberate production or dissemination of false or misleading information (disinformation) at scale, where an actor has the explicit intent to deceive or cause harm to others. Even very subtle changes to text or images can manipulate human and machine perception. Similarly, GAI systems could enable a higher degree of sophistication for malicious actors to produce disinformation that is targeted towards specific demographics. Current and emerging multimodal models make it possible to generate both text-based disinformation and highly realistic “deepfakes” – that is, synthetic audiovisual content and photorealistic images.12 Additional disinformation threats could be enabled by future GAI models trained on new data modalities.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 957,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.680511,
+            "cosine_distance": 0.319489,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p014:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "Disinformation and misinformation – both of which may be facilitated by GAI – may erode public trust in true or valid evidence and information, with downstream effects. For example, a synthetic image of a Pentagon blast went viral and briefly caused a drop in the stock market. Generative AI models can also assist malicious actors in creating compelling imagery and propaganda to support disinformation campaigns, which may not be photorealistic, but could enable these campaigns to gain more reach and engagement on social media platforms. Additionally, generative AI models can assist malicious actors in creating fraudulent content intended to impersonate others.\n\nTrustworthy AI Characteristics: Accountable and Transparent, Safe, Valid and Reliable, Interpretable and Explainable\n\n2.9. Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 812,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.66924,
+            "cosine_distance": 0.33076,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p045:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 45,
+            "text": "MG-2.2-006 Use feedback from internal and external AI Actors, users, individuals, and communities, to assess impact of AI-generated content. Human-AI Configuration\n\nMG-2.2-007 Use real-time auditing tools where they can be demonstrated to aid in the tracking and validation of the lineage and authenticity of AI-generated data. Information Integrity\n\nMG-2.2-008 Use structured feedback mechanisms to solicit and capture user input about AI-generated content to detect subtle shifts in quality or alignment with community and societal values.\n\nHuman-AI Configuration; Harmful Bias and Homogenization\n\nMG-2.2-009 Consider opportunities to responsibly use synthetic data and other privacy enhancing techniques in GAI development, where appropriate and applicable, match the statistical properties of real-world data without disclosing personally identifiable information or contributing to homogenization.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "manage",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2561,
+              "chunk_length": 902,
+              "document_type": "genai_profile",
+              "normalized_chars": 2535
+            },
+            "score": 0.570753,
+            "cosine_distance": 0.429247,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p010:para:003 | nist-ai-600-1 | p.10 | section=genai_risks | year=2024]\nGAI systems can produce content that is inciting, radicalizing, or threatening, or that glorifies violence, with greater ease and scale than other technologies. LLMs have been reported to generate dangerous or violent recommendations, and some models have generated actionable instructions for dangerous or\n\n9 Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.\n\n10 For example, legal confabulations have been shown to be pervasive in current state-of-the-art LLMs. See also, e.g.,",
+        "context_ids": [
+          "nist-ai-600-1:p010:para:003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "misinformation disinformation generative AI systems definition",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p014:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "GAI systems can ease the unintentional production or dissemination of false, inaccurate, or misleading content (misinformation) at scale, particularly if the content stems from confabulations. GAI systems can also ease the deliberate production or dissemination of false or misleading information (disinformation) at scale, where an actor has the explicit intent to deceive or cause harm to others. Even very subtle changes to text or images can manipulate human and machine perception. Similarly, GAI systems could enable a higher degree of sophistication for malicious actors to produce disinformation that is targeted towards specific demographics. Current and emerging multimodal models make it possible to generate both text-based disinformation and highly realistic “deepfakes” – that is, synthetic audiovisual content and photorealistic images.12 Additional disinformation threats could be enabled by future GAI models trained on new data modalities.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 957,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.705359,
+            "cosine_distance": 0.294641,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p014:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "Disinformation and misinformation – both of which may be facilitated by GAI – may erode public trust in true or valid evidence and information, with downstream effects. For example, a synthetic image of a Pentagon blast went viral and briefly caused a drop in the stock market. Generative AI models can also assist malicious actors in creating compelling imagery and propaganda to support disinformation campaigns, which may not be photorealistic, but could enable these campaigns to gain more reach and engagement on social media platforms. Additionally, generative AI models can assist malicious actors in creating fraudulent content intended to impersonate others.\n\nTrustworthy AI Characteristics: Accountable and Transparent, Safe, Valid and Reliable, Interpretable and Explainable\n\n2.9. Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3253,
+              "chunk_length": 812,
+              "document_type": "genai_profile",
+              "normalized_chars": 3224
+            },
+            "score": 0.67556,
+            "cosine_distance": 0.32444,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p045:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 45,
+            "text": "MG-2.2-006 Use feedback from internal and external AI Actors, users, individuals, and communities, to assess impact of AI-generated content. Human-AI Configuration\n\nMG-2.2-007 Use real-time auditing tools where they can be demonstrated to aid in the tracking and validation of the lineage and authenticity of AI-generated data. Information Integrity\n\nMG-2.2-008 Use structured feedback mechanisms to solicit and capture user input about AI-generated content to detect subtle shifts in quality or alignment with community and societal values.\n\nHuman-AI Configuration; Harmful Bias and Homogenization\n\nMG-2.2-009 Consider opportunities to responsibly use synthetic data and other privacy enhancing techniques in GAI development, where appropriate and applicable, match the statistical properties of real-world data without disclosing personally identifiable information or contributing to homogenization.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "manage",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2561,
+              "chunk_length": 902,
+              "document_type": "genai_profile",
+              "normalized_chars": 2535
+            },
+            "score": 0.578615,
+            "cosine_distance": 0.421385,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p010:para:003 | nist-ai-600-1 | p.10 | section=genai_risks | year=2024]\nGAI systems can produce content that is inciting, radicalizing, or threatening, or that glorifies violence, with greater ease and scale than other technologies. LLMs have been reported to generate dangerous or violent recommendations, and some models have generated actionable instructions for dangerous or\n\n9 Confabulations of falsehoods are most commonly a problem for text-based outputs; for audio, image, or video content, creative generation of non-factual content can be a desired behavior.\n\n10 For example, legal confabulations have been shown to be pervasive in current state-of-the-art LLMs. See also, e.g.,",
+        "context_ids": [
+          "nist-ai-600-1:p010:para:003"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF documents mention that generative AI systems can produce false or non-factual content, including confabulations and potentially dangerous outputs, but they do not explicitly define or distinguish unintentional false content (misinformation) from deliberate false content (disinformation) in generative AI systems. Therefore, there is insufficient evidence to answer the question based on the provided documents."
+      }
+    ]
+  },
+  {
+    "query_id": "q21",
+    "split": "test",
+    "type": "metadata_filter",
+    "answerable": true,
+    "question": "When tracking content provenance data under MEASURE, what three privacy and security practices should be considered to protect human subjects?",
+    "filter": {
+      "year": 2024,
+      "section": "measure"
+    },
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF 2024 MEASURE section documents do not explicitly state the three privacy and security practices to protect human subjects when tracking content provenance data. Therefore, I must abstain from answering this question based on the available evidence.",
+    "citations": [],
+    "final_context": "[nist-ai-600-1:p037:para:001 | nist-ai-600-1 | p.37 | section=measure | year=2024]\nMS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+    "final_context_ids": [
+      "nist-ai-600-1:p037:para:001"
+    ],
+    "final_context_chars": 678,
+    "search_calls": 4,
+    "llm_calls": 5,
+    "prompt_tokens": 6159,
+    "completion_tokens": 195,
+    "cached_tokens": 2560,
+    "chat_cost_usd": 0.002008,
+    "elapsed_ms": 5603.85,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "content provenance privacy security practices human subjects",
+        "filter": {
+          "year": 2024,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "nist-ai-600-1:p034:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are representative of the relevant population.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.2-001 Assess and manage statistical biases related to GAI content provenance through techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information Security; Harmful Bias and Homogenization\n\nMS-2.2-002 Document how content provenance data is tracked and how that data interacts with privacy and security. Consider: Anonymizing data to protect the privacy of human subjects; Leveraging privacy output filters; Removing any personally identifiable information (PII) to prevent potential harm or misuse.\n\nData Privacy; Human AI Configuration; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 877,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.574727,
+            "cosine_distance": 0.425273,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 595,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.527953,
+            "cosine_distance": 0.472047,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p034:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MS-2.2-003 Provide human subjects with options to withdraw participation or revoke their consent for present or future use of their data in GAI applications. Data Privacy; Human-AI Configuration; Information Integrity\n\nMS-2.2-004 Use techniques such as anonymization, differential privacy or other privacy-enhancing technologies to minimize the risks associated with linking AI-generated content back to individual human subjects.\n\nData Privacy; Human-AI Configuration\n\nAI Actor Tasks: AI Development, Human Factors, TEVV\n\nMEASURE 2.3: AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for conditions similar to deployment setting(s). Measures are documented.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.3-001 Consider baseline model performance on suites of benchmarks when selecting a model for fine tuning or enhancement with retrieval-augmented generation. Information Security; Confabulation",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 952,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.50156,
+            "cosine_distance": 0.49844,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p037:para:001 | nist-ai-600-1 | p.37 | section=measure | year=2024]\nMS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+        "context_ids": [
+          "nist-ai-600-1:p037:para:001"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "content provenance privacy security practices human subjects",
+        "filter": {
+          "year": 2024,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "nist-ai-600-1:p034:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are representative of the relevant population.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.2-001 Assess and manage statistical biases related to GAI content provenance through techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information Security; Harmful Bias and Homogenization\n\nMS-2.2-002 Document how content provenance data is tracked and how that data interacts with privacy and security. Consider: Anonymizing data to protect the privacy of human subjects; Leveraging privacy output filters; Removing any personally identifiable information (PII) to prevent potential harm or misuse.\n\nData Privacy; Human AI Configuration; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 877,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.574727,
+            "cosine_distance": 0.425273,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 595,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.527953,
+            "cosine_distance": 0.472047,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p034:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MS-2.2-003 Provide human subjects with options to withdraw participation or revoke their consent for present or future use of their data in GAI applications. Data Privacy; Human-AI Configuration; Information Integrity\n\nMS-2.2-004 Use techniques such as anonymization, differential privacy or other privacy-enhancing technologies to minimize the risks associated with linking AI-generated content back to individual human subjects.\n\nData Privacy; Human-AI Configuration\n\nAI Actor Tasks: AI Development, Human Factors, TEVV\n\nMEASURE 2.3: AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for conditions similar to deployment setting(s). Measures are documented.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.3-001 Consider baseline model performance on suites of benchmarks when selecting a model for fine tuning or enhancement with retrieval-augmented generation. Information Security; Confabulation",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 952,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.50156,
+            "cosine_distance": 0.49844,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p037:para:001 | nist-ai-600-1 | p.37 | section=measure | year=2024]\nMS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+        "context_ids": [
+          "nist-ai-600-1:p037:para:001"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "privacy security practices protect human subjects content provenance MEASURE",
+        "filter": {
+          "year": 2024,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "nist-ai-600-1:p034:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are representative of the relevant population.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.2-001 Assess and manage statistical biases related to GAI content provenance through techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information Security; Harmful Bias and Homogenization\n\nMS-2.2-002 Document how content provenance data is tracked and how that data interacts with privacy and security. Consider: Anonymizing data to protect the privacy of human subjects; Leveraging privacy output filters; Removing any personally identifiable information (PII) to prevent potential harm or misuse.\n\nData Privacy; Human AI Configuration; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 877,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.605815,
+            "cosine_distance": 0.394185,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 595,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.582264,
+            "cosine_distance": 0.417736,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:002",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-005 Measure reliability of content authentication methods, such as watermarking, cryptographic signatures, digital fingerprints, as well as access controls, conformity assessment, and model integrity verification, which can help support the effective implementation of content provenance techniques. Evaluate the rate of false positives and false negatives in content provenance, as well as true positives and true negatives for verification.\n\nInformation Integrity\n\nMS-2.7-006 Measure the rate at which recommendations from security checks and incidents are implemented. Assess how quickly the AI system can adapt and improve based on lessons learned from security incidents and feedback.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 741,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.545285,
+            "cosine_distance": 0.454715,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p037:para:001 | nist-ai-600-1 | p.37 | section=measure | year=2024]\nMS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+        "context_ids": [
+          "nist-ai-600-1:p037:para:001"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "privacy security practices protect human subjects content provenance MEASURE",
+        "filter": {
+          "year": 2024,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "nist-ai-600-1:p034:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 34,
+            "text": "MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are representative of the relevant population.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.2-001 Assess and manage statistical biases related to GAI content provenance through techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information Security; Harmful Bias and Homogenization\n\nMS-2.2-002 Document how content provenance data is tracked and how that data interacts with privacy and security. Consider: Anonymizing data to protect the privacy of human subjects; Leveraging privacy output filters; Removing any personally identifiable information (PII) to prevent potential harm or misuse.\n\nData Privacy; Human AI Configuration; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2122,
+              "chunk_length": 877,
+              "document_type": "genai_profile",
+              "normalized_chars": 2109
+            },
+            "score": 0.605815,
+            "cosine_distance": 0.394185,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 595,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.582264,
+            "cosine_distance": 0.417736,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:002",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-005 Measure reliability of content authentication methods, such as watermarking, cryptographic signatures, digital fingerprints, as well as access controls, conformity assessment, and model integrity verification, which can help support the effective implementation of content provenance techniques. Evaluate the rate of false positives and false negatives in content provenance, as well as true positives and true negatives for verification.\n\nInformation Integrity\n\nMS-2.7-006 Measure the rate at which recommendations from security checks and incidents are implemented. Assess how quickly the AI system can adapt and improve based on lessons learned from security incidents and feedback.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 741,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.545285,
+            "cosine_distance": 0.454715,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p037:para:001 | nist-ai-600-1 | p.37 | section=measure | year=2024]\nMS-2.7-003 Conduct user surveys to gather user satisfaction with the AI-generated content and user perceptions of content authenticity. Analyze user feedback to identify concerns and/or current literacy levels related to content provenance and understanding of labels on content.\n\nHuman-AI Configuration; Information Integrity\n\nMS-2.7-004 Identify metrics that reflect the effectiveness of security measures, such as data provenance, the number of unauthorized access attempts, inference, bypass, extraction, penetrations, or provenance verification.\n\nInformation Integrity; Information Security",
+        "context_ids": [
+          "nist-ai-600-1:p037:para:001"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF 2024 MEASURE section documents do not explicitly state the three privacy and security practices to protect human subjects when tracking content provenance data. Therefore, I must abstain from answering this question based on the available evidence."
+      }
+    ]
+  },
+  {
+    "query_id": "q22",
+    "split": "test",
+    "type": "metadata_filter",
+    "answerable": true,
+    "question": "Within the core AI RMF MANAGE function, how is negative residual risk defined and to whom must it be documented?",
+    "filter": {
+      "document_type": "core_framework",
+      "section": "manage"
+    },
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF core framework documents in the MANAGE section do not provide a definition of negative residual risk nor specify to whom it must be documented.",
+    "citations": [],
+    "final_context": "",
+    "final_context_ids": [],
+    "final_context_chars": 0,
+    "search_calls": 4,
+    "llm_calls": 5,
+    "prompt_tokens": 4616,
+    "completion_tokens": 176,
+    "cached_tokens": 0,
+    "chat_cost_usd": 0.002128,
+    "elapsed_ms": 6112.3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "negative residual risk definition and documentation within core AI RMF MANAGE function",
+        "filter": {
+          "document_type": "core_framework",
+          "section": "manage"
+        },
+        "results": [
+          {
+            "id": "nist-ai-100-1:p037:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented.\n\nMANAGE 2: Strategies to maximize AI benefits and minimize negative impacts are planned, prepared, implemented, documented, and informed by input from relevant AI actors.\n\nMANAGE 2.1: Resources required to manage AI risks are taken into account – along with viable non-AI alternative systems, approaches, or methods – to reduce the magnitude or likelihood of potential impacts.\n\nMANAGE 2.2: Mechanisms are in place and applied to sustain the value of deployed AI systems.\n\nMANAGE 2.3: Procedures are followed to respond to and recover from a previously unknown risk when it is identified.\n\nMANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 966,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.619843,
+            "cosine_distance": 0.380157,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p036:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 36,
+            "text": "5.4 Manage The MANAGE function entails allocating risk resources to mapped and measured risks on a regular basis and as defined by the GOVERN function. Risk treatment comprises plans to respond to, recover from, and communicate about incidents or events.\n\nContextual information gleaned from expert consultation and input from relevant AI actors\n\n– established in GOVERN and carried out in MAP – is utilized in this function to decrease the likelihood of system failures and negative impacts. Systematic documentation practices established in GOVERN and utilized in MAP and MEASURE bolster AI risk management efforts and increase transparency and accountability. Processes for assessing emergent risks are in place, along with mechanisms for continual improvement.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2393,
+              "chunk_length": 764,
+              "document_type": "core_framework",
+              "normalized_chars": 2357
+            },
+            "score": 0.559414,
+            "cosine_distance": 0.440586,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p037:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "Practices related to managing AI risks are described in the NIST AI RMF Playbook. Table 4 lists the MANAGE function’s categories and subcategories.\n\nTable 4: Categories and subcategories for the MANAGE function.\n\nMANAGE 1: AI risks based on assessments and other analytical output from the MAP and MEASURE functions are prioritized, responded to, and managed.\n\nMANAGE 1.1: A determination is made as to whether the AI system achieves its intended purposes and stated objectives and whether its development or deployment should proceed.\n\nMANAGE 1.2: Treatment of documented AI risks is prioritized based on impact, likelihood, and available resources or methods.\n\nMANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP function, are developed, planned, and documented. Risk response options can include mitigating, transferring, avoiding, or accepting.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 881,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.557165,
+            "cosine_distance": 0.442835,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "negative residual risk definition and documentation",
+        "filter": {
+          "document_type": "core_framework",
+          "section": "manage"
+        },
+        "results": [
+          {
+            "id": "nist-ai-100-1:p037:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented.\n\nMANAGE 2: Strategies to maximize AI benefits and minimize negative impacts are planned, prepared, implemented, documented, and informed by input from relevant AI actors.\n\nMANAGE 2.1: Resources required to manage AI risks are taken into account – along with viable non-AI alternative systems, approaches, or methods – to reduce the magnitude or likelihood of potential impacts.\n\nMANAGE 2.2: Mechanisms are in place and applied to sustain the value of deployed AI systems.\n\nMANAGE 2.3: Procedures are followed to respond to and recover from a previously unknown risk when it is identified.\n\nMANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 966,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.466666,
+            "cosine_distance": 0.533334,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p036:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 36,
+            "text": "5.4 Manage The MANAGE function entails allocating risk resources to mapped and measured risks on a regular basis and as defined by the GOVERN function. Risk treatment comprises plans to respond to, recover from, and communicate about incidents or events.\n\nContextual information gleaned from expert consultation and input from relevant AI actors\n\n– established in GOVERN and carried out in MAP – is utilized in this function to decrease the likelihood of system failures and negative impacts. Systematic documentation practices established in GOVERN and utilized in MAP and MEASURE bolster AI risk management efforts and increase transparency and accountability. Processes for assessing emergent risks are in place, along with mechanisms for continual improvement.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2393,
+              "chunk_length": 764,
+              "document_type": "core_framework",
+              "normalized_chars": 2357
+            },
+            "score": 0.3742,
+            "cosine_distance": 0.6258,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p038:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 38,
+            "text": "Table 4: Categories and subcategories for the MANAGE function. (Continued)\n\nMANAGE 4: Risk treatments, including response and recovery, and communication plans for the identified and measured AI risks are documented and monitored regularly.\n\nMANAGE 4.1: Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users and other relevant AI actors, appeal and override, decommissioning, incident response, recovery, and change management.\n\nMANAGE 4.2: Measurable activities for continual improvements are integrated into AI system updates and include regular engagement with interested parties, including relevant AI actors.\n\nMANAGE 4.3: Incidents and errors are communicated to relevant AI actors, including affected communities. Processes for tracking, responding to, and recovering from incidents and errors are followed and documented.\n\nCategories Subcategories",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2662,
+              "chunk_length": 927,
+              "document_type": "core_framework",
+              "normalized_chars": 2630
+            },
+            "score": 0.348049,
+            "cosine_distance": 0.651951,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "negative residual risk definition",
+        "filter": {
+          "document_type": "core_framework",
+          "section": "manage"
+        },
+        "results": [
+          {
+            "id": "nist-ai-100-1:p037:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented.\n\nMANAGE 2: Strategies to maximize AI benefits and minimize negative impacts are planned, prepared, implemented, documented, and informed by input from relevant AI actors.\n\nMANAGE 2.1: Resources required to manage AI risks are taken into account – along with viable non-AI alternative systems, approaches, or methods – to reduce the magnitude or likelihood of potential impacts.\n\nMANAGE 2.2: Mechanisms are in place and applied to sustain the value of deployed AI systems.\n\nMANAGE 2.3: Procedures are followed to respond to and recover from a previously unknown risk when it is identified.\n\nMANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 966,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.392421,
+            "cosine_distance": 0.607579,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p036:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 36,
+            "text": "5.4 Manage The MANAGE function entails allocating risk resources to mapped and measured risks on a regular basis and as defined by the GOVERN function. Risk treatment comprises plans to respond to, recover from, and communicate about incidents or events.\n\nContextual information gleaned from expert consultation and input from relevant AI actors\n\n– established in GOVERN and carried out in MAP – is utilized in this function to decrease the likelihood of system failures and negative impacts. Systematic documentation practices established in GOVERN and utilized in MAP and MEASURE bolster AI risk management efforts and increase transparency and accountability. Processes for assessing emergent risks are in place, along with mechanisms for continual improvement.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2393,
+              "chunk_length": 764,
+              "document_type": "core_framework",
+              "normalized_chars": 2357
+            },
+            "score": 0.304744,
+            "cosine_distance": 0.695256,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p037:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "Practices related to managing AI risks are described in the NIST AI RMF Playbook. Table 4 lists the MANAGE function’s categories and subcategories.\n\nTable 4: Categories and subcategories for the MANAGE function.\n\nMANAGE 1: AI risks based on assessments and other analytical output from the MAP and MEASURE functions are prioritized, responded to, and managed.\n\nMANAGE 1.1: A determination is made as to whether the AI system achieves its intended purposes and stated objectives and whether its development or deployment should proceed.\n\nMANAGE 1.2: Treatment of documented AI risks is prioritized based on impact, likelihood, and available resources or methods.\n\nMANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP function, are developed, planned, and documented. Risk response options can include mitigating, transferring, avoiding, or accepting.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 881,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.279698,
+            "cosine_distance": 0.720302,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "negative residual risk documentation",
+        "filter": {
+          "document_type": "core_framework",
+          "section": "manage"
+        },
+        "results": [
+          {
+            "id": "nist-ai-100-1:p037:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 37,
+            "text": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented.\n\nMANAGE 2: Strategies to maximize AI benefits and minimize negative impacts are planned, prepared, implemented, documented, and informed by input from relevant AI actors.\n\nMANAGE 2.1: Resources required to manage AI risks are taken into account – along with viable non-AI alternative systems, approaches, or methods – to reduce the magnitude or likelihood of potential impacts.\n\nMANAGE 2.2: Mechanisms are in place and applied to sustain the value of deployed AI systems.\n\nMANAGE 2.3: Procedures are followed to respond to and recover from a previously unknown risk when it is identified.\n\nMANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2265,
+              "chunk_length": 966,
+              "document_type": "core_framework",
+              "normalized_chars": 2237
+            },
+            "score": 0.45976,
+            "cosine_distance": 0.54024,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p036:para:002",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 36,
+            "text": "5.4 Manage The MANAGE function entails allocating risk resources to mapped and measured risks on a regular basis and as defined by the GOVERN function. Risk treatment comprises plans to respond to, recover from, and communicate about incidents or events.\n\nContextual information gleaned from expert consultation and input from relevant AI actors\n\n– established in GOVERN and carried out in MAP – is utilized in this function to decrease the likelihood of system failures and negative impacts. Systematic documentation practices established in GOVERN and utilized in MAP and MEASURE bolster AI risk management efforts and increase transparency and accountability. Processes for assessing emergent risks are in place, along with mechanisms for continual improvement.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2393,
+              "chunk_length": 764,
+              "document_type": "core_framework",
+              "normalized_chars": 2357
+            },
+            "score": 0.37367,
+            "cosine_distance": 0.62633,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p038:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 38,
+            "text": "Table 4: Categories and subcategories for the MANAGE function. (Continued)\n\nMANAGE 4: Risk treatments, including response and recovery, and communication plans for the identified and measured AI risks are documented and monitored regularly.\n\nMANAGE 4.1: Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users and other relevant AI actors, appeal and override, decommissioning, incident response, recovery, and change management.\n\nMANAGE 4.2: Measurable activities for continual improvements are integrated into AI system updates and include regular engagement with interested parties, including relevant AI actors.\n\nMANAGE 4.3: Incidents and errors are communicated to relevant AI actors, including affected communities. Processes for tracking, responding to, and recovering from incidents and errors are followed and documented.\n\nCategories Subcategories",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "manage",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2662,
+              "chunk_length": 927,
+              "document_type": "core_framework",
+              "normalized_chars": 2630
+            },
+            "score": 0.360408,
+            "cosine_distance": 0.639592,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF core framework documents in the MANAGE section do not provide a definition of negative residual risk nor specify to whom it must be documented."
+      }
+    ]
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "type": "unanswerable",
+    "answerable": false,
+    "question": "Which specific cryptographic watermarking standard (such as C2PA or Google SynthID) does NIST AI 600-1 mandate for tracking generative AI content provenance?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF documents do not specify or mandate any particular cryptographic watermarking standard such as C2PA or Google SynthID for tracking generative AI content provenance. Therefore, there is insufficient evidence to answer the question.",
+    "citations": [],
+    "final_context": "[nist-ai-600-1:p016:para:000 | nist-ai-600-1 | p.16 | section=genai_risks | year=2024]\nCSAM. Even when trained on “clean” data, increasingly capable GAI models can synthesize or produce synthetic NCII and CSAM. Websites, mobile apps, and custom-built models that generate synthetic NCII have moved from niche internet forums to mainstream, automated, and scaled online businesses.\n\nTrustworthy AI Characteristics: Fair with Harmful Bias Managed, Safe, Privacy Enhanced\n\n2.12. Value Chain and Component Integration",
+    "final_context_ids": [
+      "nist-ai-600-1:p016:para:000"
+    ],
+    "final_context_chars": 513,
+    "search_calls": 3,
+    "llm_calls": 4,
+    "prompt_tokens": 3783,
+    "completion_tokens": 151,
+    "cached_tokens": 0,
+    "chat_cost_usd": 0.001755,
+    "elapsed_ms": 4641.63,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "cryptographic watermarking standard for generative AI content provenance",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p055:para:004",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 55,
+            "text": "Data provenance refers to tracking the origin and history of input data through metadata and digital watermarking techniques. Provenance data tracking processes can include and assist AI Actors across the lifecycle who may not have full visibility or control over the various trade-offs and cascading impacts of early-stage model decisions on downstream performance and synthetic outputs. For example, by selecting a watermarking model to prioritize robustness (the durability of a watermark), an AI actor may inadvertently diminish computational complexity ( the resources required to implement watermarking). Organizational risk management efforts for enhancing content provenance include:\n\n• Tracking provenance of training data and metadata for GAI systems;\n\n• Documenting provenance data limitations within GAI systems;",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "appendix",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3417,
+              "chunk_length": 824,
+              "document_type": "genai_profile",
+              "normalized_chars": 3383
+            },
+            "score": 0.615686,
+            "cosine_distance": 0.384314,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p055:para:003",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 55,
+            "text": "Provenance metadata can include information about GAI model developers or creators of GAI content, date/time of creation, location, modifications, and sources. Metadata can be tracked for text, images, videos, audio, and underlying datasets. The implementation of provenance data tracking techniques can help assess the authenticity, integrity, intellectual property rights, and potential manipulations in digital content. Some well-known techniques for provenance data tracking include digital watermarking, metadata recording, digital fingerprinting, and human authentication, among others. Provenance Data Tracking Approaches Provenance data tracking techniques for GAI systems can be used to track the history and origin of data inputs, metadata, and synthetic content. Provenance data tracking records the origin and history for digital content, allowing its authenticity to be determined. It consists of techniques to record metadata as well as overt and covert digital watermarks on content.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "appendix",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3417,
+              "chunk_length": 998,
+              "document_type": "genai_profile",
+              "normalized_chars": 3383
+            },
+            "score": 0.565896,
+            "cosine_distance": 0.434104,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p056:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 56,
+            "text": "Organizations can document and delineate GAI system objectives and limitations to identify gaps where provenance data may be most useful. For instance, GAI systems used for content creation may require robust watermarking techniques and corresponding detectors to identify the source of content or metadata recording techniques and metadata management tools and repositories to trace content origins and modifications. Further narrowing of GAI task definitions to include provenance data can enable organizations to maximize the utility of provenance data and risk management efforts. A.1.7. Enhancing Content Provenance through Structured Public Feedback While indirect feedback methods such as automated error collection systems are useful, they often lack the context and depth that direct input from end users can provide. Organizations can leverage feedback approaches described in the Pre-Deployment Testing section to capture input from external sources such as through AI red-teaming.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "appendix",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3277,
+              "chunk_length": 992,
+              "document_type": "genai_profile",
+              "normalized_chars": 3245
+            },
+            "score": 0.557243,
+            "cosine_distance": 0.442757,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "C2PA Google SynthID watermarking standard generative AI provenance",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p016:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 16,
+            "text": "CSAM. Even when trained on “clean” data, increasingly capable GAI models can synthesize or produce synthetic NCII and CSAM. Websites, mobile apps, and custom-built models that generate synthetic NCII have moved from niche internet forums to mainstream, automated, and scaled online businesses.\n\nTrustworthy AI Characteristics: Fair with Harmful Bias Managed, Safe, Privacy Enhanced\n\n2.12. Value Chain and Component Integration",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2948,
+              "chunk_length": 426,
+              "document_type": "genai_profile",
+              "normalized_chars": 2918
+            },
+            "score": 0.536143,
+            "cosine_distance": 0.463857,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p055:para:004",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 55,
+            "text": "Data provenance refers to tracking the origin and history of input data through metadata and digital watermarking techniques. Provenance data tracking processes can include and assist AI Actors across the lifecycle who may not have full visibility or control over the various trade-offs and cascading impacts of early-stage model decisions on downstream performance and synthetic outputs. For example, by selecting a watermarking model to prioritize robustness (the durability of a watermark), an AI actor may inadvertently diminish computational complexity ( the resources required to implement watermarking). Organizational risk management efforts for enhancing content provenance include:\n\n• Tracking provenance of training data and metadata for GAI systems;\n\n• Documenting provenance data limitations within GAI systems;",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "appendix",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3417,
+              "chunk_length": 824,
+              "document_type": "genai_profile",
+              "normalized_chars": 3383
+            },
+            "score": 0.509079,
+            "cosine_distance": 0.490921,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p055:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 55,
+            "text": "• Human / AI: Performed by GAI in combination with specialist or non-specialist human teams. GAI-led red-teaming can be more cost effective than human red-teamers alone. Human or GAI-led AI red-teaming may be better suited for eliciting different types of harms. A.1.6. Content Provenance Overview GAI technologies can be leveraged for many applications such as content generation and synthetic data. Some aspects of GAI outputs, such as the production of deepfake content, can challenge our ability to distinguish human-generated content from AI-generated synthetic content. To help manage and mitigate these risks, digital transparency mechanisms like provenance data tracking can trace the origin and history of content. Provenance data tracking and synthetic content detection can help facilitate greater information access about both authentic and synthetic content to users, enabling better knowledge of trustworthiness in AI systems.",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "appendix",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3417,
+              "chunk_length": 940,
+              "document_type": "genai_profile",
+              "normalized_chars": 3383
+            },
+            "score": 0.507416,
+            "cosine_distance": 0.492584,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p016:para:000 | nist-ai-600-1 | p.16 | section=genai_risks | year=2024]\nCSAM. Even when trained on “clean” data, increasingly capable GAI models can synthesize or produce synthetic NCII and CSAM. Websites, mobile apps, and custom-built models that generate synthetic NCII have moved from niche internet forums to mainstream, automated, and scaled online businesses.\n\nTrustworthy AI Characteristics: Fair with Harmful Bias Managed, Safe, Privacy Enhanced\n\n2.12. Value Chain and Component Integration",
+        "context_ids": [
+          "nist-ai-600-1:p016:para:000"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "watermarking standard C2PA Google SynthID NIST AI 600-1",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p016:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 16,
+            "text": "CSAM. Even when trained on “clean” data, increasingly capable GAI models can synthesize or produce synthetic NCII and CSAM. Websites, mobile apps, and custom-built models that generate synthetic NCII have moved from niche internet forums to mainstream, automated, and scaled online businesses.\n\nTrustworthy AI Characteristics: Fair with Harmful Bias Managed, Safe, Privacy Enhanced\n\n2.12. Value Chain and Component Integration",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2948,
+              "chunk_length": 426,
+              "document_type": "genai_profile",
+              "normalized_chars": 2918
+            },
+            "score": 0.459417,
+            "cosine_distance": 0.540583,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p037:para:002",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 37,
+            "text": "MS-2.7-005 Measure reliability of content authentication methods, such as watermarking, cryptographic signatures, digital fingerprints, as well as access controls, conformity assessment, and model integrity verification, which can help support the effective implementation of content provenance techniques. Evaluate the rate of false positives and false negatives in content provenance, as well as true positives and true negatives for verification.\n\nInformation Integrity\n\nMS-2.7-006 Measure the rate at which recommendations from security checks and incidents are implemented. Assess how quickly the AI system can adapt and improve based on lessons learned from security incidents and feedback.\n\nInformation Integrity; Information Security",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2868,
+              "chunk_length": 741,
+              "document_type": "genai_profile",
+              "normalized_chars": 2835
+            },
+            "score": 0.452619,
+            "cosine_distance": 0.547381,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p028:para:002",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 28,
+            "text": "MP-2.3-001 Assess the accuracy, quality, reliability, and authenticity of GAI output by comparing it to a set of known ground truth data and by using a variety of evaluation methods (e.g., human oversight and automated evaluation, proven cryptographic techniques, review of content inputs).\n\nInformation Integrity",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "map",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 2060,
+              "chunk_length": 313,
+              "document_type": "genai_profile",
+              "normalized_chars": 2041
+            },
+            "score": 0.434571,
+            "cosine_distance": 0.565429,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p016:para:000 | nist-ai-600-1 | p.16 | section=genai_risks | year=2024]\nCSAM. Even when trained on “clean” data, increasingly capable GAI models can synthesize or produce synthetic NCII and CSAM. Websites, mobile apps, and custom-built models that generate synthetic NCII have moved from niche internet forums to mainstream, automated, and scaled online businesses.\n\nTrustworthy AI Characteristics: Fair with Harmful Bias Managed, Safe, Privacy Enhanced\n\n2.12. Value Chain and Component Integration",
+        "context_ids": [
+          "nist-ai-600-1:p016:para:000"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF documents do not specify or mandate any particular cryptographic watermarking standard such as C2PA or Google SynthID for tracking generative AI content provenance. Therefore, there is insufficient evidence to answer the question."
+      }
+    ]
+  },
+  {
+    "query_id": "u05",
+    "split": "test",
+    "type": "unanswerable",
+    "answerable": false,
+    "question": "How many mandatory ISO/IEC 42001 clauses and annual external audit cycles are required to achieve official NIST AI RMF 1.0 certification?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "The retrieved NIST AI RMF documents do not specify the number of mandatory ISO/IEC 42001 clauses or the required annual external audit cycles for achieving official NIST AI RMF 1.0 certification. Therefore, no definitive answer can be provided based on the available evidence.",
+    "citations": [],
+    "final_context": "[nist-ai-100-1:p007:para:003 | nist-ai-100-1 | p.7 | section=executive_summary | year=2023]\nThe Framework and supporting resources will be updated, expanded, and improved based on evolving technology, the standards landscape around the world, and AI community experience and feedback. NIST will continue to align the AI RMF and related guidance with applicable international standards, guidelines, and practices. As the AI RMF is put into use, additional lessons will be learned to inform future updates and additional resources. The Framework is divided into two parts. Part 1 discusses how organizations can frame the risks related to AI and describes the intended audience. Next, AI risks and trustworthiness are analyzed, outlining the characteristics of trustworthy AI systems, which include",
+    "final_context_ids": [
+      "nist-ai-100-1:p007:para:003"
+    ],
+    "final_context_chars": 796,
+    "search_calls": 1,
+    "llm_calls": 2,
+    "prompt_tokens": 1626,
+    "completion_tokens": 117,
+    "cached_tokens": 0,
+    "chat_cost_usd": 0.000838,
+    "elapsed_ms": 2627.41,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "ISO/IEC 42001 mandatory clauses and annual external audit cycles for NIST AI RMF 1.0 certification",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-100-1:p008:para:001",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 8,
+            "text": "Development of the AI RMF by NIST in collaboration with the private and public sectors is directed and consistent with its broader AI efforts called for by the National AI Initiative Act of 2020, the National Security Commission on Artificial Intelligence recommendations, and the Plan for Federal Engagement in Developing Technical Standards and Related Tools. Engagement with the AI community during this Framework’s development\n\n– via responses to a formal Request for Information, three widely attended workshops, public comments on a concept paper and two drafts of the Framework, discussions at multiple public forums, and many small group meetings – has informed development of the AI RMF 1.0 as well as AI research and development and evaluation conducted by NIST and others. Priority research and additional guidance that will enhance this Framework will be captured in an associated AI Risk Management Framework Roadmap to which NIST and the broader community can contribute.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "executive_summary",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 1874,
+              "chunk_length": 985,
+              "document_type": "core_framework",
+              "normalized_chars": 1836
+            },
+            "score": 0.593582,
+            "cosine_distance": 0.406418,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p047:para:000",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 47,
+            "text": "Appendix D: Attributes of the AI RMF\n\nNIST described several key attributes of the AI RMF when work on the Framework first began. These attributes have remained intact and were used to guide the AI RMF’s development. They are provided here as a reference.\n\nThe AI RMF strives to:\n\n1. Be risk-based, resource-efficient, pro-innovation, and voluntary.\n\n2. Be consensus-driven and developed and regularly updated through an open, transparent process. All stakeholders should have the opportunity to contribute to the AI RMF’s development.\n\n3. Use clear and plain language that is understandable by a broad audience, including senior executives, government officials, non-governmental organization leadership, and those who are not AI professionals – while still of sufficient technical depth to be useful to practitioners. The AI RMF should allow for communication of AI risks across an organization, between organizations, with customers, and to the public at large.",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "appendix",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 2453,
+              "chunk_length": 964,
+              "document_type": "core_framework",
+              "normalized_chars": 2424
+            },
+            "score": 0.576823,
+            "cosine_distance": 0.423177,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-100-1:p007:para:003",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 7,
+            "text": "The Framework and supporting resources will be updated, expanded, and improved based on evolving technology, the standards landscape around the world, and AI community experience and feedback. NIST will continue to align the AI RMF and related guidance with applicable international standards, guidelines, and practices. As the AI RMF is put into use, additional lessons will be learned to inform future updates and additional resources. The Framework is divided into two parts. Part 1 discusses how organizations can frame the risks related to AI and describes the intended audience. Next, AI risks and trustworthiness are analyzed, outlining the characteristics of trustworthy AI systems, which include",
+            "metadata": {
+              "year": 2023,
+              "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+              "section": "executive_summary",
+              "version": "1.0",
+              "language": "en",
+              "raw_chars": 3103,
+              "chunk_length": 704,
+              "document_type": "core_framework",
+              "normalized_chars": 3065
+            },
+            "score": 0.567309,
+            "cosine_distance": 0.432691,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-100-1:p007:para:003 | nist-ai-100-1 | p.7 | section=executive_summary | year=2023]\nThe Framework and supporting resources will be updated, expanded, and improved based on evolving technology, the standards landscape around the world, and AI community experience and feedback. NIST will continue to align the AI RMF and related guidance with applicable international standards, guidelines, and practices. As the AI RMF is put into use, additional lessons will be learned to inform future updates and additional resources. The Framework is divided into two parts. Part 1 discusses how organizations can frame the risks related to AI and describes the intended audience. Next, AI risks and trustworthiness are analyzed, outlining the characteristics of trustworthy AI systems, which include",
+        "context_ids": [
+          "nist-ai-100-1:p007:para:003"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The retrieved NIST AI RMF documents do not specify the number of mandatory ISO/IEC 42001 clauses or the required annual external audit cycles for achieving official NIST AI RMF 1.0 certification. Therefore, no definitive answer can be provided based on the available evidence."
+      }
+    ]
+  },
+  {
+    "query_id": "u06",
+    "split": "test",
+    "type": "unanswerable",
+    "answerable": false,
+    "question": "What hard maximum training energy limit in megawatt-hours (MWh) or carbon threshold in tCO2e does NIST AI 600-1 enforce before prohibiting model deployment?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "The NIST AI 600-1 document does not specify a hard maximum training energy limit in megawatt-hours (MWh) or a carbon threshold in tCO2e that prohibits model deployment. It mentions measuring or estimating environmental impacts and verifying carbon capture or offset programs but does not enforce a specific numeric limit before prohibiting deployment.",
+    "citations": [],
+    "final_context": "[nist-ai-600-1:p041:para:001 | nist-ai-600-1 | p.41 | section=measure | year=2024]\nMS-2.12-003 Measure or estimate environmental impacts (e.g., energy and water consumption) for training, fine tuning, and deploying models: Verify tradeoffs between resources used at inference time versus additional resources required at training time.\n\nEnvironmental\n\nMS-2.12-004 Verify effectiveness of carbon capture or offset programs for GAI training and applications, and address green-washing concerns. Environmental\n\nAI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",
+    "final_context_ids": [
+      "nist-ai-600-1:p041:para:001"
+    ],
+    "final_context_chars": 607,
+    "search_calls": 1,
+    "llm_calls": 2,
+    "prompt_tokens": 1611,
+    "completion_tokens": 134,
+    "cached_tokens": 0,
+    "chat_cost_usd": 0.000859,
+    "elapsed_ms": 2458.56,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_vector",
+        "query": "maximum training energy limit megawatt-hours carbon threshold tCO2e model deployment prohibition",
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ai-600-1:p041:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 41,
+            "text": "MS-2.12-003 Measure or estimate environmental impacts (e.g., energy and water consumption) for training, fine tuning, and deploying models: Verify tradeoffs between resources used at inference time versus additional resources required at training time.\n\nEnvironmental\n\nMS-2.12-004 Verify effectiveness of carbon capture or offset programs for GAI training and applications, and address green-washing concerns. Environmental\n\nAI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 1376,
+              "chunk_length": 524,
+              "document_type": "genai_profile",
+              "normalized_chars": 1367
+            },
+            "score": 0.490163,
+            "cosine_distance": 0.509837,
+            "rank": 1,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p012:para:001",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 12,
+            "text": "Current estimates suggest that training a single transformer LLM can emit as much carbon as 300 round-trip flights between San Francisco and New York. In a study comparing energy consumption and carbon emissions for LLM inference, generative tasks (e.g., text summarization) were found to be more energy-and carbon-i ntensive th an discriminative or non-generative tasks (e.g., text classification). Methods for creating smaller versions of trained models, such as model distillation or compression, could reduce environmental impacts at inference time, but training and tuning such models may still contribute to their environmental impacts. Currently there is no agreed upon method to estimate environmental impacts from GAI.\n\nTrustworthy AI Characteristics: Accountable and Transparent, Safe\n\n2.6. Harmful Bias and Homogenization",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "genai_risks",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 3384,
+              "chunk_length": 832,
+              "document_type": "genai_profile",
+              "normalized_chars": 3357
+            },
+            "score": 0.466633,
+            "cosine_distance": 0.533367,
+            "rank": 2,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "nist-ai-600-1:p041:para:000",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 41,
+            "text": "MS-2.11-005 Assess the proportion of synthetic to non-synthetic training data and verify training data is not overly homogenous or GAI-produced to mitigate concerns of model collapse.\n\nHarmful Bias and Homogenization\n\nAI Actor Tasks: AI Deployment, AI Impact Assessment, Affected Individuals and Communities, Domain Experts, End-Users, Operation and Monitoring, TEVV\n\nMEASURE 2.12: Environmental impact and sustainability of AI model training and management activities – as identified in the MAP function – are assessed and documented.\n\nAction ID Suggested Action GAI Risks\n\nMS-2.12-001 Assess safety to physical environments when deploying GAI systems. Dangerous, Violent, or Hateful Content\n\nMS-2.12-002 Document anticipated environmental impacts of model development, maintenance, and deployment in product design decisions. Environmental",
+            "metadata": {
+              "year": 2024,
+              "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+              "section": "measure",
+              "version": "NIST AI 600-1 (Final)",
+              "language": "en",
+              "raw_chars": 1376,
+              "chunk_length": 841,
+              "document_type": "genai_profile",
+              "normalized_chars": 1367
+            },
+            "score": 0.376988,
+            "cosine_distance": 0.623012,
+            "rank": 3,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[nist-ai-600-1:p041:para:001 | nist-ai-600-1 | p.41 | section=measure | year=2024]\nMS-2.12-003 Measure or estimate environmental impacts (e.g., energy and water consumption) for training, fine tuning, and deploying models: Verify tradeoffs between resources used at inference time versus additional resources required at training time.\n\nEnvironmental\n\nMS-2.12-004 Verify effectiveness of carbon capture or offset programs for GAI training and applications, and address green-washing concerns. Environmental\n\nAI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",
+        "context_ids": [
+          "nist-ai-600-1:p041:para:001"
+        ]
+      },
+      {
+        "event": "abstain",
+        "reason": "The NIST AI 600-1 document does not specify a hard maximum training energy limit in megawatt-hours (MWh) or a carbon threshold in tCO2e that prohibits model deployment. It mentions measuring or estimating environmental impacts and verifying carbon capture or offset programs but does not enforce a specific numeric limit before prohibiting deployment."
+      }
+    ]
+  }
+]

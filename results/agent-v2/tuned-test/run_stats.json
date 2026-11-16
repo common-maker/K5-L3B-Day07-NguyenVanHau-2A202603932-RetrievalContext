@@ -1,0 +1,14 @@
+{
+  "mode": "tuned",
+  "split": "test",
+  "cases": 8,
+  "answered": 5,
+  "abstain": 3,
+  "errors": 0,
+  "agent_model": "gpt-4.1-mini",
+  "chat_cost_usd": 0.012746,
+  "embed_tokens": 133,
+  "embed_cost_usd": 3e-06,
+  "rerank_cost_usd": 0.01197,
+  "total_elapsed_ms": 77066.79
+}

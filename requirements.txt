@@ -1,0 +1,6 @@
+# Day 7 Agentic RAG dependencies (Python 3.11+)
+# Pin openai<3 to retain standard httpx transport compatibility on Windows.
+psycopg[binary]==3.3.8
+pypdf>=5,<7
+python-dotenv>=1,<2
+openai>=1,<3

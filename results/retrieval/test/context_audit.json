@@ -1,0 +1,45 @@
+{
+  "split": "test",
+  "scale": "0 = no evidence; 1 = partial evidence/missing condition or source; 2 = complete evidence and source",
+  "baseline_config": "m1_dense_baseline",
+  "baseline_counts": {"0": 5, "1": 0, "2": 0, "N": 5, "mean": 0.0},
+  "selected_config": "imp1_hybrid_rerank_b2400",
+  "selected_counts": {"0": 0, "1": 0, "2": 5, "N": 5, "mean": 2.0},
+  "cases": [
+    {
+      "query_id": "q18",
+      "baseline_grade": 0,
+      "baseline_reason": "Rank-1 gold nist-ai-100-1:p020:para:001 (883 chars) dropped by 800-char budget; packed unrelated p006:para:001.",
+      "selected_grade": 2,
+      "selected_reason": "Packed both p020:para:001 and p020:para:002 with source/page metadata covering resilience and security definitions."
+    },
+    {
+      "query_id": "q19",
+      "baseline_grade": 0,
+      "baseline_reason": "Rank-1 gold nist-ai-100-1:p046:para:002 (975 chars) dropped by 800-char budget; packed 600-1:p045:para:002 (MG-2.4-001).",
+      "selected_grade": 2,
+      "selected_reason": "Packed 600-1:p043:para:002 (MS-4.2-004) and rank-2 gold 100-1:p046:para:002 with full human-overrule evidence."
+    },
+    {
+      "query_id": "q20",
+      "baseline_grade": 0,
+      "baseline_reason": "Rank-1 gold nist-ai-600-1:p014:para:000 (957 chars) dropped by 800-char budget; packed p010:para:003 footnotes.",
+      "selected_grade": 2,
+      "selected_reason": "Packed p014:para:000 (misinformation vs disinformation) and p010:para:000 (confabulation background)."
+    },
+    {
+      "query_id": "q21",
+      "baseline_grade": 0,
+      "baseline_reason": "Rank-1 gold nist-ai-600-1:p034:para:000 (877 chars) dropped by 800-char budget; packed p037:para:001 (MS-2.7).",
+      "selected_grade": 2,
+      "selected_reason": "Packed p034:para:000 (MS-2.2-002) and p034:para:001 with all three privacy/security practices and source metadata."
+    },
+    {
+      "query_id": "q22",
+      "baseline_grade": 0,
+      "baseline_reason": "All top-3 hits (966, 881, 764 chars + header) exceeded 800-char budget, leaving empty context.",
+      "selected_grade": 2,
+      "selected_reason": "Packed p037:para:001 (MANAGE 1.4 definition and documentation recipients) and p037:para:000."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true, true, true], "note": "Risk tolerance definition, non-prescription, and GOVERN 1.3 integration supported by p.12 and p.27."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true, true], "note": "Counterproductive risk elimination and prioritization supported by p.12-13."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true, true], "note": "Separation of duties and collective responsibility supported by p.15-16."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "note": "Robustness in unexpected settings supported by p.19."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true, true], "note": "Transparency/explainability/interpretability questions supported by p.21-22."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "note": "All 3 bias categories and no discriminatory intent supported by p.23."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true, true, true], "note": "Documenting unmeasured risks supported by 600-1 p.32-33 and 100-1 p.34."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true, true, true], "note": "Pre-trained model & transfer learning risks supported by 100-1 p.43-44."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "note": "Confabulation definition and statistical origin supported by 600-1 p.10."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true], "note": "Distillation/compression training caveat supported by 600-1 p.12."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true, true], "note": "Actor-specific applicability supported by 600-1 p.17 and p.51."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "note": "Filter fix recovered 600-1 p.21 GV-1.7-002 with all 5 decommissioning factors."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true, true], "note": "Fail safely requirement supported by 100-1 p.35 and 600-1 p.36."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true, true, true], "note": "Filter fix recovered 600-1 p.53 anecdotal testing passage plus MS-2.5-001 and MEASURE 2.5."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "note": "GV-1.2-001 and GV-1.2-002 supported by 600-1 p.18."},
+  {"query_id": "q16", "answer_grade": 2, "citation_support": [true], "note": "3-tier governance role split supported by 100-1 p.27."},
+  {"query_id": "q17", "answer_grade": 2, "citation_support": [true], "note": "MP-4.1-008 supported by 600-1 p.30."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on HIPAA notification deadline."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on FLOP compute threshold."},
+  {"query_id": "u03", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on EU AI Act tiers and fines."}
+]

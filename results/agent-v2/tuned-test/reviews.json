@@ -1,0 +1,10 @@
+[
+  {"query_id": "q18", "answer_grade": 2, "citation_support": [true, true], "note": "Resilience vs security distinction fully supported by 100-1 p.20 para:001 and para:002."},
+  {"query_id": "q19", "answer_grade": 2, "citation_support": [true, true], "note": "Human override operational evidence fully supported by 600-1 p.43 MS-4.2-004 and 100-1 p.46 para:002."},
+  {"query_id": "q20", "answer_grade": 2, "citation_support": [true, true], "note": "Misinformation vs disinformation distinction fully supported by 600-1 p.10 and p.14."},
+  {"query_id": "q21", "answer_grade": 2, "citation_support": [true, true], "note": "All 3 privacy/security practices in MS-2.2-002 plus MS-2.2-003/004 supported by 600-1 p.34."},
+  {"query_id": "q22", "answer_grade": 2, "citation_support": [true], "note": "Negative residual risk definition and recipients supported by 100-1 p.37 MANAGE 1.4."},
+  {"query_id": "u04", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; no mandatory C2PA/SynthID algorithm in NIST AI 600-1."},
+  {"query_id": "u05", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; no ISO/IEC 42001 clauses or certification audit cycles."},
+  {"query_id": "u06", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; no numeric MWh or tCO2e limits."}
+]

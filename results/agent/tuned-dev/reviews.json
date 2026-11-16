@@ -1,0 +1,22 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true, true], "note": "Complete definition and non-prescription explanation supported by p.12."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true, true], "note": "Complete explanation supported by p.12-13."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true, true], "note": "Exact separation of duties supported by p.16 and p.40."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "note": "Exact robustness requirement supported by p.19."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true, true], "note": "Exact what/how/why distinctions supported by p.21-22."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "note": "All 3 bias categories and no discriminatory intent requirement supported by p.23."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true, true], "note": "Exact documentation requirement supported by 600-1 p.32-33."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true, true], "note": "All risks supported by 100-1 p.43."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "note": "Definition and statistical next-token origin supported by 600-1 p.10."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true], "note": "Caveat on training/tuning impacts supported by 600-1 p.12."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true, true], "note": "Non-uniform applicability and context rule supported by 600-1 p.17 and p.51."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [true], "note": "Speculative filter document_type=core_framework blocked 600-1 p.21 GV-1.7-002; p.28 only states generic GOVERN 1.7."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true, true], "note": "Fail safely requirement supported by 100-1 p.35 and 600-1 p.36."},
+  {"query_id": "q14", "answer_grade": 0, "citation_support": [false, false], "note": "Speculative filter year=2023 blocked 600-1 p.53; cited p.18/p.34 never mention anecdotal tests."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "note": "GV-1.2-001 and GV-1.2-002 supported by 600-1 p.18."},
+  {"query_id": "q16", "answer_grade": 2, "citation_support": [true], "note": "Exact 3-tier governance role split supported by 100-1 p.27."},
+  {"query_id": "q17", "answer_grade": 2, "citation_support": [true], "note": "MP-4.1-008 supported by 600-1 p.30."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on HIPAA notification deadline."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on FLOP compute threshold."},
+  {"query_id": "u03", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on EU AI Act tiers and fines."}
+]

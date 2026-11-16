@@ -31,3 +31,20 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
 Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+
+## Triển khai cá nhân (Day 7)
+
+- **Báo cáo cá nhân:** [2A202603932_NguyenVanHau.md](report/individual/2A202603932_NguyenVanHau.md)
+- **Code chính:** [src/](src/README.md) · **Dữ liệu & benchmark:** `data/nist_chunks.json`, `data/nist_questions.json`, `data/nist_cases.json`, `data/nist_manifest.json`
+- **Cài đặt môi trường:**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\pip.exe install -r requirements.txt
+  Copy-Item .env.example .env   # điền DATABASE_URL và OPENAI_API_KEY
+  ```
+- **Chạy kiểm thử & pipeline (sau khi bật Docker container `day6_student_starter`):**
+  ```powershell
+  .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+  .\.venv\Scripts\python.exe -m src.eval_retrieval --split dev
+  .\.venv\Scripts\python.exe -m src.eval_agent --split test --mode tuned --primary-strategy hybrid_rerank --budget 2800 --output results/agent-v2
+  ```

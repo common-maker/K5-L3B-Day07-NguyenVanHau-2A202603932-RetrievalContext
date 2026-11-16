@@ -1,0 +1,7 @@
+[
+  {"query_id": "q21", "answer_grade": 0, "citation_support": [], "note": "False abstention; budget=800 dropped p.34 rank-1 chunk."},
+  {"query_id": "q22", "answer_grade": 0, "citation_support": [], "note": "False abstention; budget=800 yielded empty context."},
+  {"query_id": "u04", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on C2PA/SynthID watermarking standard."},
+  {"query_id": "u05", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on ISO/IEC 42001 clauses."},
+  {"query_id": "u06", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on MWh/tCO2e limits."}
+]

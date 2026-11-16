@@ -1,0 +1,22 @@
+[
+  {"query_id": "q01", "answer_grade": 1, "citation_support": [false], "note": "Budget dropped p.12 definition; p.13 does not define risk tolerance."},
+  {"query_id": "q02", "answer_grade": 0, "citation_support": [false], "note": "Budget dropped p.12 para:003; p.13 does not explain why eliminating all risk is counterproductive."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "note": "Exact support in nist-ai-100-1:p016:para:000."},
+  {"query_id": "q04", "answer_grade": 0, "citation_support": [], "note": "False abstention; dense retrieval missed p.19."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "note": "Exact support in nist-ai-100-1:p022:para:000."},
+  {"query_id": "q06", "answer_grade": 0, "citation_support": [], "note": "False abstention; p.23 para:000 (849 chars) dropped by 800-char budget."},
+  {"query_id": "q07", "answer_grade": 0, "citation_support": [], "note": "False abstention; dense retrieval missed gold."},
+  {"query_id": "q08", "answer_grade": 1, "citation_support": [false], "note": "p.43 dropped by budget; cited p.44 covers transfer learning but does not compare against traditional software."},
+  {"query_id": "q09", "answer_grade": 1, "citation_support": [false], "note": "p.10 para:000 dropped by budget; cited footnote para:003 does not explain statistical next-token origin."},
+  {"query_id": "q10", "answer_grade": 1, "citation_support": [false], "note": "p.12 dropped by budget; cited p.41 MS-2.12-003 covers training/inference tradeoff but not distillation/compression."},
+  {"query_id": "q11", "answer_grade": 0, "citation_support": [false], "note": "p.17 dropped by budget; cited p.51 does not address developer vs deployer action applicability."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [false], "note": "p.21 GV-1.7-002 dropped by budget; answer falsely attributed MANAGE 2.4 (p.45) to GOVERN 1.7."},
+  {"query_id": "q13", "answer_grade": 0, "citation_support": [], "note": "False abstention; p.36 para:000 (836 chars) dropped by 800-char budget."},
+  {"query_id": "q14", "answer_grade": 0, "citation_support": [], "note": "False abstention; dense retrieval missed p.53."},
+  {"query_id": "q15", "answer_grade": 0, "citation_support": [], "note": "False abstention; top-3 chunks > 800 chars yielded empty context."},
+  {"query_id": "q16", "answer_grade": 0, "citation_support": [], "note": "False abstention; top-3 chunks > 800 chars yielded empty context."},
+  {"query_id": "q17", "answer_grade": 2, "citation_support": [true], "note": "Exact MP-4.1-008 support in nist-ai-600-1:p030:para:002."},
+  {"query_id": "u01", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; HIPAA notification window absent."},
+  {"query_id": "u02", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; FLOP threshold absent."},
+  {"query_id": "u03", "abstention_correct": true, "citation_support": [], "note": "Properly abstained; EU AI Act tiers/fines absent."}
+]

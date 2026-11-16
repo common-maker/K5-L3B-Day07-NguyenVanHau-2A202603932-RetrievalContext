@@ -1,0 +1,10 @@
+[
+  {"query_id": "q18", "answer_grade": 1, "citation_support": [true], "note": "Partial answer from short p020:para:002 (447 chars); main definition in p020:para:001 (883 chars) was dropped by 800-char budget."},
+  {"query_id": "q19", "answer_grade": 0, "citation_support": [], "note": "False abstention; 800-char budget dropped p.46 rank-1 chunk (975 chars)."},
+  {"query_id": "q20", "answer_grade": 0, "citation_support": [], "note": "False abstention; 800-char budget dropped p.14 rank-1 chunk (957 chars)."},
+  {"query_id": "q21", "answer_grade": 0, "citation_support": [], "note": "False abstention; 800-char budget dropped p.34 rank-1 chunk (877 chars)."},
+  {"query_id": "q22", "answer_grade": 0, "citation_support": [], "note": "False abstention; 800-char budget dropped all top-3 chunks leaving empty context."},
+  {"query_id": "u04", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on C2PA/SynthID watermarking standard."},
+  {"query_id": "u05", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on ISO/IEC 42001 clauses."},
+  {"query_id": "u06", "abstention_correct": true, "citation_support": [], "note": "Proper abstention on MWh/tCO2e limits."}
+]
