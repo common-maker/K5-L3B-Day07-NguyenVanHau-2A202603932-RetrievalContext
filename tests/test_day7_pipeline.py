@@ -215,6 +215,22 @@ class Day7PipelineTests(unittest.TestCase):
         with self.assertRaises(ConnectionError):
             runner.run_case({"id": "q3", "split": "dev", "answerable": True, "question": "Q?"})
 
+    def test_bootstrap_pgvector_row_validation(self) -> None:
+        from src.bootstrap_pgvector import build_upsert_rows, embed_documents_openai
+
+        chunks = _make_chunks()[:1]
+        rows = build_upsert_rows("B", chunks, [[0.1, 0.2, 0.3]], dimensions=3)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0][0], "B")
+        self.assertEqual(rows[0][1], "doc1:p001:para:000")
+
+        with self.assertRaises(ValueError):
+            build_upsert_rows("B", chunks, [[0.1, 0.2]], dimensions=3)
+        with self.assertRaises(ValueError):
+            build_upsert_rows("B", [], [], dimensions=3)
+        with self.assertRaises(RuntimeError):
+            embed_documents_openai(["hello"], api_key="", model_name="text-embedding-3-small")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -35,16 +35,20 @@ Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/i
 ## Triển khai cá nhân (Day 7)
 
 - **Báo cáo cá nhân:** [2A202603932_NguyenVanHau.md](report/individual/2A202603932_NguyenVanHau.md)
-- **Code chính:** [src/](src/README.md) · **Dữ liệu & benchmark:** `data/nist_chunks.json`, `data/nist_questions.json`, `data/nist_cases.json`, `data/nist_manifest.json`
-- **Cài đặt môi trường:**
+- **Nguồn Day 6 liên kết:** `https://github.com/common-maker/K5-L3B-Day06-NguyenVanHau-2A202603932-DataIngestion` (commit `5cc2ab253cb12815f43677356a0c74616328de54`) — dữ liệu NIST đã xuất sẵn tại `data/nist_chunks.json`, `data/nist_questions.json`, `data/nist_cases.json`, `data/nist_manifest.json`.
+- **Code chính:** [src/](src/README.md) · **Docker DB độc lập:** `docker-compose.yml`, `init.sql`
+- **Cài đặt môi trường & khởi tạo `pgvector` (không cần clone lại Day 6):**
   ```powershell
   python -m venv .venv
   .\.venv\Scripts\pip.exe install -r requirements.txt
   Copy-Item .env.example .env   # điền DATABASE_URL và OPENAI_API_KEY
+  docker compose up -d --wait   # bỏ qua nếu container day6_student_starter đã chạy ở 127.0.0.1:55433
+  .\.venv\Scripts\python.exe -m src.bootstrap_pgvector
   ```
-- **Chạy kiểm thử & pipeline (sau khi bật Docker container `day6_student_starter`):**
+- **Chạy kiểm thử & benchmark:**
   ```powershell
-  .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+  python -m unittest discover -s tests -v
   .\.venv\Scripts\python.exe -m src.eval_retrieval --split dev
+  .\.venv\Scripts\python.exe -m src.eval_retrieval --split test --configs m1_dense_baseline imp1_hybrid_rerank_b2400
   .\.venv\Scripts\python.exe -m src.eval_agent --split test --mode tuned --primary-strategy hybrid_rerank --budget 2800 --output results/agent-v2
   ```

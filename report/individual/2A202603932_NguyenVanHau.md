@@ -15,6 +15,7 @@
   - Tổng cộng **95 trang nội dung hợp lệ**, **328 chunk** theo chiến lược `B`/`C` của Day 6 (`by_paragraph`, `max_size=1000`, `min=15`, `median=808`, `mean=722.0`, `max=999` ký tự), xuất nguyên trạng từ bảng `rag_chunks` (`strategy = 'B'`) sang `data/nist_chunks.json` với `parity_exact = True`.
 
 - **Vector store, embedding model, phiên bản và số chiều:**
+  - **Repo nguồn Day 6:** `https://github.com/common-maker/K5-L3B-Day06-NguyenVanHau-2A202603932-DataIngestion` (commit `5cc2ab253cb12815f43677356a0c74616328de54`). Để người chấm tái lập độc lập ngay trong repo Day 7 mà không cần clone Day 6, repo bổ sung `docker-compose.yml`, `init.sql` và `src/bootstrap_pgvector.py` (tự nhận biết bảng Day 6 sẵn có hoặc nạp mới `328` chunk từ `data/nist_chunks.json` bằng `text-embedding-3-small`, chi phí ~$0.000889).
   - **Vector store:** PostgreSQL `16.16` + `pgvector 0.8.7` chạy qua Docker (`day6_student_starter` trên `127.0.0.1:55433`, bảng `rag_chunks`, khoảng cách Cosine chính xác `<=>`, hỗ trợ SQL `WHERE` whitelist trên `year`, `document_type`, `section`, `document_id`).
   - **Embedding model:** OpenAI `text-embedding-3-small`, **1536 chiều** (`$0.02 / 1M` input tokens). Query embedding dùng đúng cùng model và số chiều với index Day 6 qua `src/day6_bridge.py` (`OpenAIQueryEmbedder`).
 
@@ -38,10 +39,10 @@
 
 - **Lệnh chạy tái lập (từ thư mục gốc):**
   ```powershell
-  # 1. Khởi động vector store Day 6 và kiểm tra parity
-  Push-Location ..\K5-L3-Day06-DataIngestionEngineering\starter; docker compose -p day6_student_starter up -d --wait; Pop-Location
-  .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-  .\.venv\Scripts\python.exe -m src.build_dataset
+  # 1. Khởi động vector store (dùng Day 6 hoặc Docker độc lập trong repo Day 7) và kiểm tra parity
+  docker compose up -d --wait   # hoặc dùng container `day6_student_starter` sẵn có ở 127.0.0.1:55433
+  .\.venv\Scripts\python.exe -m src.bootstrap_pgvector --check   # bỏ --check nếu cần nạp mới từ data/nist_chunks.json
+  python -m unittest discover -s tests -v
 
   # 2. Benchmark retrieval trên dev và test
   .\.venv\Scripts\python.exe starter/baseline.py --chunks data/nist_chunks.json --questions data/nist_questions.json --split dev --output results/retrieval/dev-starter-tfidf
