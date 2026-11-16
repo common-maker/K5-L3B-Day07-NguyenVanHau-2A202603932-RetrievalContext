@@ -92,7 +92,7 @@
       "nist-ai-100-1:p006:para:001"
     ],
     "context_chars": 453,
-    "elapsed_ms": 1411.84,
+    "elapsed_ms": 2274.35,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -191,7 +191,7 @@
       "nist-ai-600-1:p045:para:002"
     ],
     "context_chars": 737,
-    "elapsed_ms": 486.09,
+    "elapsed_ms": 229.74,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -290,7 +290,7 @@
       "nist-ai-600-1:p010:para:003"
     ],
     "context_chars": 703,
-    "elapsed_ms": 353.0,
+    "elapsed_ms": 236.74,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -392,7 +392,7 @@
       "nist-ai-600-1:p037:para:001"
     ],
     "context_chars": 678,
-    "elapsed_ms": 351.28,
+    "elapsed_ms": 330.87,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -492,7 +492,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 250.36,
+    "elapsed_ms": 349.02,
     "hit1": true,
     "hit3": true,
     "context_hit": false,

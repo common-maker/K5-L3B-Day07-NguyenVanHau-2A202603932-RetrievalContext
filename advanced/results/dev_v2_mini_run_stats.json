@@ -1,0 +1,11 @@
+{
+  "split": "dev",
+  "tag": "v2_mini",
+  "model": "gpt-4.1-mini",
+  "cases": 18,
+  "answered": 14,
+  "abstain": 3,
+  "errors": 1,
+  "total_cost_usd": 0.10437,
+  "total_elapsed_s": 79.54
+}

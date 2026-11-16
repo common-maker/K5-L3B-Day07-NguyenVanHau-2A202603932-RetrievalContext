@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from dotenv import load_dotenv
+from openai import OpenAI
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DAY6_ROOT = PROJECT_ROOT.parent / "K5-L3-Day06-DataIngestionEngineering"
@@ -75,6 +76,13 @@ def load_settings(env_file: Path | None = None, *, require_db: bool = True, requ
         agent_model=agent_model,
         rerank_model=rerank_model,
     )
+
+
+def create_openai_client(api_key: str, *, max_retries: int = 6, timeout: float = 45.0) -> OpenAI:
+    """Create a configured OpenAI client with bounded retries for transient DNS/socket blips."""
+    if not api_key.strip():
+        raise RuntimeError("OPENAI_API_KEY is missing or empty.")
+    return OpenAI(api_key=api_key, max_retries=max_retries, timeout=timeout)
 
 
 def estimate_embedding_cost_usd(model: str, prompt_tokens: int) -> float:

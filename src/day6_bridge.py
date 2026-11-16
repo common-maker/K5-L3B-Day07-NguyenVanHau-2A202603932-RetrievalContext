@@ -8,11 +8,11 @@ from pathlib import Path
 from typing import Any
 
 import psycopg
-from openai import OpenAI
 
 from .config import (
     ALLOWED_FILTERS,
     DEFAULT_DAY6_ROOT,
+    create_openai_client,
     estimate_embedding_cost_usd,
 )
 
@@ -47,7 +47,7 @@ class OpenAIQueryEmbedder:
             )
         self.model_name = model_name
         self.dimensions = expected_dimensions
-        self.client = OpenAI(api_key=api_key)
+        self.client = create_openai_client(api_key)
         self.total_prompt_tokens = 0
         self.total_requests = 0
         self.total_elapsed_seconds = 0.0

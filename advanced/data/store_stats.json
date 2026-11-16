@@ -1,0 +1,9 @@
+{
+  "table": "rag_multimodal",
+  "expected_chunks": 558,
+  "db_rows": 558,
+  "newly_embedded": 558,
+  "embed_tokens": 166132,
+  "embed_cost_usd": 0.003323,
+  "elapsed_s": 12.28
+}

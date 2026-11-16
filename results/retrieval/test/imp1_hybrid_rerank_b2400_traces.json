@@ -113,7 +113,7 @@
       "nist-ai-100-1:p020:para:002"
     ],
     "context_chars": 1508,
-    "elapsed_ms": 8749.81,
+    "elapsed_ms": 3296.6,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -232,7 +232,7 @@
       "nist-ai-100-1:p046:para:002"
     ],
     "context_chars": 1931,
-    "elapsed_ms": 3975.42,
+    "elapsed_ms": 3165.54,
     "hit1": false,
     "hit3": true,
     "context_hit": true,
@@ -303,7 +303,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 3218
         },
-        "score": 7.0,
+        "score": 6.0,
         "cosine_distance": 0.446734,
         "rank": 2,
         "strategy": "hybrid_rerank",
@@ -313,7 +313,7 @@
         },
         "base_score": 0.030536,
         "base_rank": 3,
-        "rerank_score": 7.0,
+        "rerank_score": 6.0,
         "hit": false
       },
       {
@@ -353,7 +353,7 @@
       "nist-ai-600-1:p010:para:000"
     ],
     "context_chars": 2030,
-    "elapsed_ms": 2911.93,
+    "elapsed_ms": 3057.94,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -477,7 +477,7 @@
       "nist-ai-600-1:p034:para:001"
     ],
     "context_chars": 1997,
-    "elapsed_ms": 3010.01,
+    "elapsed_ms": 2734.96,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -522,7 +522,7 @@
           "normalized_chars": 2237
         },
         "score": 10.0,
-        "cosine_distance": 0.348134,
+        "cosine_distance": 0.348182,
         "rank": 1,
         "strategy": "hybrid_rerank",
         "fusion_ranks": {
@@ -551,8 +551,8 @@
           "document_type": "core_framework",
           "normalized_chars": 2237
         },
-        "score": 2.0,
-        "cosine_distance": 0.436718,
+        "score": 3.0,
+        "cosine_distance": 0.436716,
         "rank": 2,
         "strategy": "hybrid_rerank",
         "fusion_ranks": {
@@ -561,7 +561,7 @@
         },
         "base_score": 0.032258,
         "base_rank": 2,
-        "rerank_score": 2.0,
+        "rerank_score": 3.0,
         "hit": false
       },
       {
@@ -581,8 +581,8 @@
           "document_type": "core_framework",
           "normalized_chars": 2357
         },
-        "score": 1.0,
-        "cosine_distance": 0.440966,
+        "score": 2.0,
+        "cosine_distance": 0.441009,
         "rank": 3,
         "strategy": "hybrid_rerank",
         "fusion_ranks": {
@@ -591,7 +591,7 @@
         },
         "base_score": 0.031746,
         "base_rank": 3,
-        "rerank_score": 1.0,
+        "rerank_score": 2.0,
         "hit": false
       }
     ],
@@ -601,7 +601,7 @@
       "nist-ai-100-1:p037:para:000"
     ],
     "context_chars": 2013,
-    "elapsed_ms": 2376.72,
+    "elapsed_ms": 1980.44,
     "hit1": true,
     "hit3": true,
     "context_hit": true,

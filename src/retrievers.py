@@ -9,9 +9,7 @@ import unicodedata
 from collections import Counter
 from typing import Any, Protocol
 
-from openai import OpenAI
-
-from .config import ALLOWED_FILTERS, estimate_chat_cost_usd
+from .config import ALLOWED_FILTERS, create_openai_client, estimate_chat_cost_usd
 from .day6_bridge import Day6PgVectorClient, OpenAIQueryEmbedder
 
 _CODE_TOKEN_RE = re.compile(r"[a-z]+-\d+(?:\.\d+)*-\d+|\d+-\d+")
@@ -240,7 +238,7 @@ class LlmRerankRetriever:
         if not api_key.strip():
             raise RuntimeError("OPENAI_API_KEY is empty; reranking requires a valid key.")
         self.base_retriever = base_retriever
-        self.client = OpenAI(api_key=api_key)
+        self.client = create_openai_client(api_key)
         self.model = model
         self.candidate_k = candidate_k
         self.name = name
@@ -286,6 +284,7 @@ class LlmRerankRetriever:
         resp = self.client.chat.completions.create(
             model=self.model,
             temperature=0.0,
+            seed=42,
             response_format={"type": "json_object"},
             messages=[
                 {"role": "system", "content": system_msg},
@@ -357,7 +356,7 @@ class QueryRewriteRetriever:
         if not api_key.strip():
             raise RuntimeError("OPENAI_API_KEY is empty; query rewrite requires a valid key.")
         self.base_retriever = base_retriever
-        self.client = OpenAI(api_key=api_key)
+        self.client = create_openai_client(api_key)
         self.model = model
         self.candidate_k = candidate_k
         self.name = name
@@ -388,6 +387,7 @@ class QueryRewriteRetriever:
         resp = self.client.chat.completions.create(
             model=self.model,
             temperature=0.0,
+            seed=42,
             response_format={"type": "json_object"},
             messages=[
                 {"role": "system", "content": system_msg},

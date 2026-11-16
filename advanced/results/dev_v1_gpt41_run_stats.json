@@ -1,0 +1,11 @@
+{
+  "split": "dev",
+  "tag": "v1_gpt41",
+  "model": "gpt-4.1",
+  "cases": 18,
+  "answered": 14,
+  "abstain": 1,
+  "errors": 3,
+  "total_cost_usd": 0.14448,
+  "total_elapsed_s": 67.62
+}

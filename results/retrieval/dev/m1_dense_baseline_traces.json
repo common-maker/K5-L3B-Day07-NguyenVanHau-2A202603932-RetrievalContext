@@ -90,7 +90,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 3437.07,
+    "elapsed_ms": 2481.91,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -189,7 +189,7 @@
       "nist-ai-100-1:p006:para:003"
     ],
     "context_chars": 433,
-    "elapsed_ms": 605.23,
+    "elapsed_ms": 741.72,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -288,7 +288,7 @@
       "nist-ai-100-1:p045:para:001"
     ],
     "context_chars": 586,
-    "elapsed_ms": 277.64,
+    "elapsed_ms": 329.14,
     "hit1": false,
     "hit3": true,
     "context_hit": false,
@@ -387,7 +387,7 @@
       "nist-ai-100-1:p044:para:003"
     ],
     "context_chars": 595,
-    "elapsed_ms": 289.43,
+    "elapsed_ms": 304.89,
     "hit1": false,
     "hit3": false,
     "context_hit": false,
@@ -486,7 +486,7 @@
       "nist-ai-100-1:p022:para:000"
     ],
     "context_chars": 791,
-    "elapsed_ms": 268.54,
+    "elapsed_ms": 324.39,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -585,7 +585,7 @@
       "nist-ai-600-1:p042:para:002"
     ],
     "context_chars": 337,
-    "elapsed_ms": 274.54,
+    "elapsed_ms": 296.42,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -689,7 +689,7 @@
       "nist-ai-100-1:p033:para:002"
     ],
     "context_chars": 620,
-    "elapsed_ms": 284.88,
+    "elapsed_ms": 211.33,
     "hit1": false,
     "hit3": false,
     "context_hit": false,
@@ -788,7 +788,7 @@
       "nist-ai-100-1:p044:para:003"
     ],
     "context_chars": 595,
-    "elapsed_ms": 261.7,
+    "elapsed_ms": 347.38,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -829,8 +829,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 3218
         },
-        "score": 0.76282,
-        "cosine_distance": 0.23718,
+        "score": 0.762846,
+        "cosine_distance": 0.237154,
         "rank": 1,
         "strategy": "dense_pgvector",
         "hit": true
@@ -852,8 +852,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 3218
         },
-        "score": 0.628088,
-        "cosine_distance": 0.371912,
+        "score": 0.628047,
+        "cosine_distance": 0.371953,
         "rank": 2,
         "strategy": "dense_pgvector",
         "hit": false
@@ -875,8 +875,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 3218
         },
-        "score": 0.573394,
-        "cosine_distance": 0.426606,
+        "score": 0.573341,
+        "cosine_distance": 0.426659,
         "rank": 3,
         "strategy": "dense_pgvector",
         "hit": false
@@ -887,7 +887,7 @@
       "nist-ai-600-1:p010:para:003"
     ],
     "context_chars": 703,
-    "elapsed_ms": 352.14,
+    "elapsed_ms": 214.75,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -986,7 +986,7 @@
       "nist-ai-600-1:p041:para:001"
     ],
     "context_chars": 607,
-    "elapsed_ms": 264.15,
+    "elapsed_ms": 203.46,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -1085,7 +1085,7 @@
       "nist-ai-600-1:p051:para:004"
     ],
     "context_chars": 676,
-    "elapsed_ms": 266.66,
+    "elapsed_ms": 333.8,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -1184,7 +1184,7 @@
       "nist-ai-600-1:p045:para:002"
     ],
     "context_chars": 737,
-    "elapsed_ms": 295.4,
+    "elapsed_ms": 392.32,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -1283,7 +1283,7 @@
       "nist-ai-100-1:p034:para:002"
     ],
     "context_chars": 483,
-    "elapsed_ms": 339.41,
+    "elapsed_ms": 381.36,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -1380,7 +1380,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 298.74,
+    "elapsed_ms": 220.86,
     "hit1": false,
     "hit3": false,
     "context_hit": false,
@@ -1424,8 +1424,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 2569
         },
-        "score": 0.7203,
-        "cosine_distance": 0.2797,
+        "score": 0.720284,
+        "cosine_distance": 0.279716,
         "rank": 1,
         "strategy": "dense_pgvector",
         "hit": true
@@ -1447,8 +1447,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 2598
         },
-        "score": 0.679989,
-        "cosine_distance": 0.320011,
+        "score": 0.680015,
+        "cosine_distance": 0.319985,
         "rank": 2,
         "strategy": "dense_pgvector",
         "hit": false
@@ -1470,8 +1470,8 @@
           "document_type": "genai_profile",
           "normalized_chars": 2598
         },
-        "score": 0.671652,
-        "cosine_distance": 0.328348,
+        "score": 0.671675,
+        "cosine_distance": 0.328325,
         "rank": 3,
         "strategy": "dense_pgvector",
         "hit": false
@@ -1480,7 +1480,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 251.29,
+    "elapsed_ms": 212.0,
     "hit1": true,
     "hit3": true,
     "context_hit": false,
@@ -1580,7 +1580,7 @@
     "context": "",
     "context_ids": [],
     "context_chars": 0,
-    "elapsed_ms": 539.16,
+    "elapsed_ms": 208.63,
     "hit1": false,
     "hit3": true,
     "context_hit": false,
@@ -1682,7 +1682,7 @@
       "nist-ai-600-1:p030:para:002"
     ],
     "context_chars": 787,
-    "elapsed_ms": 256.22,
+    "elapsed_ms": 290.52,
     "hit1": true,
     "hit3": true,
     "context_hit": true,

@@ -14,9 +14,8 @@ from pathlib import Path
 from typing import Any
 
 import psycopg
-from openai import OpenAI
 
-from .config import PROJECT_ROOT, estimate_embedding_cost_usd, load_settings
+from .config import PROJECT_ROOT, create_openai_client, estimate_embedding_cost_usd, load_settings
 from .day6_bridge import KNOWN_EMBEDDING_DIMS, Day6PgVectorClient, _to_pgvector_literal
 
 
@@ -113,7 +112,7 @@ def embed_documents_openai(
     if model_name not in KNOWN_EMBEDDING_DIMS or KNOWN_EMBEDDING_DIMS[model_name] != expected_dimensions:
         raise ValueError(f"Incompatible embedding model '{model_name}' for {expected_dimensions} dims.")
 
-    client = OpenAI(api_key=api_key)
+    client = create_openai_client(api_key)
     vectors: list[list[float]] = []
     prompt_tokens = 0
     t0 = time.perf_counter()

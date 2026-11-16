@@ -1,0 +1,48 @@
+{
+  "total": 30,
+  "passed": 26,
+  "ratio": "26/30",
+  "pass_pct": 86.67,
+  "meets_90pct_threshold": false,
+  "errors": 0,
+  "total_latency_ms": 142340.01,
+  "total_cost_usd": 0.158281,
+  "by_category": {
+    "chart": {
+      "passed": 5,
+      "total": 5,
+      "ratio": "5/5",
+      "pct": 100.0
+    },
+    "image_diagram": {
+      "passed": 4,
+      "total": 5,
+      "ratio": "4/5",
+      "pct": 80.0
+    },
+    "multi_hop": {
+      "passed": 4,
+      "total": 4,
+      "ratio": "4/4",
+      "pct": 100.0
+    },
+    "table": {
+      "passed": 6,
+      "total": 6,
+      "ratio": "6/6",
+      "pct": 100.0
+    },
+    "text": {
+      "passed": 4,
+      "total": 4,
+      "ratio": "4/4",
+      "pct": 100.0
+    },
+    "unanswerable": {
+      "passed": 3,
+      "total": 6,
+      "ratio": "3/6",
+      "pct": 50.0
+    }
+  }
+}

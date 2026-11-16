@@ -45,10 +45,19 @@ Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/i
   docker compose up -d --wait   # bỏ qua nếu container day6_student_starter đã chạy ở 127.0.0.1:55433
   .\.venv\Scripts\python.exe -m src.bootstrap_pgvector
   ```
-- **Chạy kiểm thử & benchmark:**
+- **Chạy kiểm thử & benchmark (Core 85 điểm):**
   ```powershell
   python -m unittest discover -s tests -v
   .\.venv\Scripts\python.exe -m src.eval_retrieval --split dev
   .\.venv\Scripts\python.exe -m src.eval_retrieval --split test --configs m1_dense_baseline imp1_hybrid_rerank_b2400
   .\.venv\Scripts\python.exe -m src.eval_agent --split test --mode tuned --primary-strategy hybrid_rerank --budget 2800 --output results/agent-v2
+  ```
+- **Thử thách nâng cao Multimodal RAG (+15 điểm bonus — 154 trang Gemini 1.5 `arXiv:2403.05530`, `advanced/`):**
+  ```powershell
+  .\.venv\Scripts\pip.exe install -r requirements.txt
+  .\.venv\Scripts\python.exe -m advanced.ingest --stage all
+  .\.venv\Scripts\python.exe -m advanced.store
+  .\.venv\Scripts\python.exe -m advanced.build_benchmark_v3
+  .\.venv\Scripts\python.exe -m advanced.evaluate run --split test --tag frozen_v3_mini --model gpt-4.1-mini --max-steps 5 --benchmark advanced/data/benchmark_v3.json
+  .\.venv\Scripts\python.exe -m advanced.evaluate score --split test --tag frozen_v3_mini --reviews advanced/results/test_frozen_v3_mini_reviews.json --benchmark advanced/data/benchmark_v3.json
   ```

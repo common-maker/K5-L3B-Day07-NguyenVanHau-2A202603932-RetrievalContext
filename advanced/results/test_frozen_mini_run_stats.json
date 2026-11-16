@@ -1,0 +1,11 @@
+{
+  "split": "test",
+  "tag": "frozen_mini",
+  "model": "gpt-4.1-mini",
+  "cases": 30,
+  "answered": 27,
+  "abstain": 3,
+  "errors": 0,
+  "total_cost_usd": 0.169932,
+  "total_elapsed_s": 135.73
+}

@@ -231,6 +231,14 @@ class Day7PipelineTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             embed_documents_openai(["hello"], api_key="", model_name="text-embedding-3-small")
 
+    def test_create_openai_client_sets_retries_and_rejects_empty_key(self) -> None:
+        from src.config import create_openai_client
+
+        with self.assertRaises(RuntimeError):
+            create_openai_client("")
+        client = create_openai_client("dummy-key")
+        self.assertGreaterEqual(client.max_retries, 5)
+
 
 if __name__ == "__main__":
     unittest.main()

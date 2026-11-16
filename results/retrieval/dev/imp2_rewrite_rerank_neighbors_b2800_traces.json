@@ -123,7 +123,7 @@
       "nist-ai-100-1:p012:para:001"
     ],
     "context_chars": 2490,
-    "elapsed_ms": 12385.57,
+    "elapsed_ms": 4949.64,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -216,32 +216,33 @@
         "hit": false
       },
       {
-        "id": "nist-ai-100-1:p037:para:001",
+        "id": "nist-ai-100-1:p009:para:002",
         "source_id": "nist-ai-100-1",
         "source": "starter/data/NIST.AI.100-1.pdf",
-        "page": 37,
-        "text": "MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to both downstream acquirers of AI systems and end users are documented.\n\nMANAGE 2: Strategies to maximize AI benefits and minimize negative impacts are planned, prepared, implemented, documented, and informed by input from relevant AI actors.\n\nMANAGE 2.1: Resources required to manage AI risks are taken into account – along with viable non-AI alternative systems, approaches, or methods – to reduce the magnitude or likelihood of potential impacts.\n\nMANAGE 2.2: Mechanisms are in place and applied to sustain the value of deployed AI systems.\n\nMANAGE 2.3: Procedures are followed to respond to and recover from a previously unknown risk when it is identified.\n\nMANAGE 2.4: Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+        "page": 9,
+        "text": "While risk management processes generally address negative impacts, this Framework offers approaches to minimize anticipated negative impacts of AI systems and identify opportunities to maximize positive impacts. Effectively managing the risk of potential harms could lead to more trustworthy AI systems and unleash potential benefits to people (individuals, communities, and society), organizations, and systems/ecosystems. Risk management can enable AI developers and users to understand impacts and account for the inherent limitations and uncertainties in their models and systems, which in turn can improve overall system performance and trustworthiness and the likelihood that AI technologies will be used in ways that are beneficial.",
         "metadata": {
           "year": 2023,
           "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
-          "section": "manage",
+          "section": "foundational",
           "version": "1.0",
           "language": "en",
-          "raw_chars": 2265,
-          "chunk_length": 966,
+          "raw_chars": 2750,
+          "chunk_length": 740,
           "document_type": "core_framework",
-          "normalized_chars": 2237
+          "normalized_chars": 2714
         },
-        "score": 4.0,
-        "cosine_distance": 0.428351,
+        "score": 3.0,
+        "cosine_distance": 0.406861,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
-          "original": 11
+          "original": 3,
+          "rewrite_2": 3
         },
-        "base_score": 0.016901,
-        "base_rank": 11,
-        "rerank_score": 4.0,
+        "base_score": 0.031746,
+        "base_rank": 3,
+        "rerank_score": 3.0,
         "hit": false
       }
     ],
@@ -252,7 +253,7 @@
       "nist-ai-100-1:p013:para:000"
     ],
     "context_chars": 2619,
-    "elapsed_ms": 25086.15,
+    "elapsed_ms": 4602.87,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -382,7 +383,7 @@
       "nist-ai-100-1:p017:para:000"
     ],
     "context_chars": 2330,
-    "elapsed_ms": 7572.48,
+    "elapsed_ms": 5009.31,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -511,7 +512,7 @@
       "nist-ai-100-1:p019:para:002"
     ],
     "context_chars": 2634,
-    "elapsed_ms": 13373.7,
+    "elapsed_ms": 4366.18,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -530,7 +531,7 @@
       "raw_query": "What distinct question does each of transparency, explainability, and interpretability answer for an AI system?",
       "rewrites": [
         "AI system transparency vs explainability vs interpretability definitions and distinctions",
-        "Differences in questions addressed by AI transparency, explainability, and interpretability"
+        "Distinct questions addressed by transparency, explainability, and interpretability in AI systems"
       ]
     },
     "gold": [
@@ -620,18 +621,18 @@
           "document_type": "core_framework",
           "normalized_chars": 3087
         },
-        "score": 3.0,
+        "score": 4.0,
         "cosine_distance": 0.334442,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 4,
           "rewrite_1": 4,
-          "rewrite_2": 5
+          "rewrite_2": 8
         },
-        "base_score": 0.043558,
+        "base_score": 0.043015,
         "base_rank": 4,
-        "rerank_score": 3.0,
+        "rerank_score": 4.0,
         "hit": false
       }
     ],
@@ -642,7 +643,7 @@
       "nist-ai-100-1:p022:para:001"
     ],
     "context_chars": 2271,
-    "elapsed_ms": 23117.49,
+    "elapsed_ms": 4611.3,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -750,7 +751,7 @@
           "document_type": "core_framework",
           "normalized_chars": 1636
         },
-        "score": 3.0,
+        "score": 4.0,
         "cosine_distance": 0.332447,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
@@ -761,7 +762,7 @@
         },
         "base_score": 0.045161,
         "base_rank": 2,
-        "rerank_score": 3.0,
+        "rerank_score": 4.0,
         "hit": false
       }
     ],
@@ -772,7 +773,7 @@
       "nist-ai-100-1:p023:para:001"
     ],
     "context_chars": 2633,
-    "elapsed_ms": 16810.31,
+    "elapsed_ms": 4314.62,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -854,7 +855,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 2410
         },
-        "score": 9.5,
+        "score": 9.0,
         "cosine_distance": 0.362828,
         "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
@@ -864,7 +865,7 @@
         },
         "base_score": 0.031663,
         "base_rank": 3,
-        "rerank_score": 9.5,
+        "rerank_score": 9.0,
         "hit": false
       },
       {
@@ -884,7 +885,7 @@
           "normalized_chars": 2072,
           "chunk_length": 767
         },
-        "score": 9.0,
+        "score": 8.0,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
@@ -892,7 +893,7 @@
         },
         "base_score": 0.01791,
         "base_rank": 10,
-        "rerank_score": 9.0,
+        "rerank_score": 8.0,
         "hit": true
       }
     ],
@@ -903,7 +904,7 @@
       "nist-ai-100-1:p034:para:000"
     ],
     "context_chars": 2686,
-    "elapsed_ms": 11134.14,
+    "elapsed_ms": 4417.97,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -950,8 +951,8 @@
           "document_type": "core_framework",
           "normalized_chars": 2670
         },
-        "score": 10.0,
-        "cosine_distance": 0.352557,
+        "score": 9.5,
+        "cosine_distance": 0.352569,
         "rank": 1,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
@@ -961,7 +962,7 @@
         },
         "base_score": 0.044758,
         "base_rank": 3,
-        "rerank_score": 10.0,
+        "rerank_score": 9.5,
         "hit": true
       },
       {
@@ -982,7 +983,7 @@
           "normalized_chars": 2670
         },
         "score": 9.0,
-        "cosine_distance": 0.497471,
+        "cosine_distance": 0.497466,
         "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
@@ -1012,8 +1013,8 @@
           "document_type": "core_framework",
           "normalized_chars": 2670
         },
-        "score": 8.5,
-        "cosine_distance": 0.39414,
+        "score": 7.5,
+        "cosine_distance": 0.394131,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
@@ -1023,7 +1024,7 @@
         },
         "base_score": 0.04569,
         "base_rank": 1,
-        "rerank_score": 8.5,
+        "rerank_score": 7.5,
         "hit": false
       }
     ],
@@ -1034,7 +1035,7 @@
       "nist-ai-100-1:p044:para:000"
     ],
     "context_chars": 2323,
-    "elapsed_ms": 12978.05,
+    "elapsed_ms": 4119.39,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1112,7 +1113,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 3218
         },
-        "score": 5.0,
+        "score": 4.0,
         "cosine_distance": 0.426659,
         "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
@@ -1123,7 +1124,7 @@
         },
         "base_score": 0.042884,
         "base_rank": 3,
-        "rerank_score": 5.0,
+        "rerank_score": 4.0,
         "hit": false
       },
       {
@@ -1165,7 +1166,7 @@
       "nist-ai-600-1:p010:para:001"
     ],
     "context_chars": 2726,
-    "elapsed_ms": 17375.92,
+    "elapsed_ms": 4951.45,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1274,7 +1275,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 2905
         },
-        "score": 0.5,
+        "score": 1.0,
         "cosine_distance": 0.466642,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
@@ -1285,7 +1286,7 @@
         },
         "base_score": 0.041484,
         "base_rank": 3,
-        "rerank_score": 0.5,
+        "rerank_score": 1.0,
         "hit": false
       }
     ],
@@ -1296,7 +1297,7 @@
       "nist-ai-600-1:p012:para:002"
     ],
     "context_chars": 2557,
-    "elapsed_ms": 4526.0,
+    "elapsed_ms": 4545.96,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1315,7 +1316,7 @@
       "raw_query": "Do all suggested generative AI risk-management actions apply equally to every AI actor, and how should organizations determine applicability?",
       "rewrites": [
         "Generative AI risk management applicability across AI actors",
-        "Determining organizational applicability of generative AI risk-management actions"
+        "Determining organizational applicability of generative AI risk mitigation actions"
       ]
     },
     "gold": [
@@ -1343,7 +1344,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 1870
         },
-        "score": 9.0,
+        "score": 9.5,
         "cosine_distance": 0.321056,
         "rank": 1,
         "strategy": "rewrite_hybrid_rerank",
@@ -1352,37 +1353,9 @@
           "rewrite_2": 4
         },
         "base_score": 0.032172,
-        "base_rank": 3,
-        "rerank_score": 9.0,
+        "base_rank": 2,
+        "rerank_score": 9.5,
         "hit": true
-      },
-      {
-        "id": "nist-ai-100-1:p012:para:002",
-        "source_id": "nist-ai-100-1",
-        "source": "starter/data/NIST.AI.100-1.pdf",
-        "page": 12,
-        "text": "The Framework is intended to be flexible and to augment existing risk practices which should align with applicable laws, regulations, and norms. Organizations should follow existing regulations and guidelines for risk criteria, tolerance, and response established by organizational, domain, discipline, sector, or professional requirements. Some sectors or industries may have established definitions of harm or established documentation, reporting, and disclosure requirements. Within sectors, risk management may depend on existing guidelines for specific applications and use case settings. Where established guidelines do not exist, organizations should define reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used to manage risks and to document risk management processes.",
-        "metadata": {
-          "year": 2023,
-          "document_type": "core_framework",
-          "version": "1.0",
-          "language": "en",
-          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
-          "section": "foundational",
-          "raw_chars": 2964,
-          "normalized_chars": 2928,
-          "chunk_length": 801
-        },
-        "score": 8.5,
-        "rank": 2,
-        "strategy": "rewrite_hybrid_rerank",
-        "fusion_ranks": {
-          "original": 10
-        },
-        "base_score": 0.017143,
-        "base_rank": 12,
-        "rerank_score": 8.5,
-        "hit": false
       },
       {
         "id": "nist-ai-600-1:p016:para:003",
@@ -1401,16 +1374,44 @@
           "document_type": "genai_profile",
           "normalized_chars": 2918
         },
-        "score": 8.0,
+        "score": 8.5,
         "cosine_distance": 0.360703,
-        "rank": 3,
+        "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 2,
-          "rewrite_2": 2
+          "rewrite_2": 3
         },
-        "base_score": 0.032258,
-        "base_rank": 2,
+        "base_score": 0.032053,
+        "base_rank": 3,
+        "rerank_score": 8.5,
+        "hit": false
+      },
+      {
+        "id": "nist-ai-100-1:p012:para:002",
+        "source_id": "nist-ai-100-1",
+        "source": "starter/data/NIST.AI.100-1.pdf",
+        "page": 12,
+        "text": "The Framework is intended to be flexible and to augment existing risk practices which should align with applicable laws, regulations, and norms. Organizations should follow existing regulations and guidelines for risk criteria, tolerance, and response established by organizational, domain, discipline, sector, or professional requirements. Some sectors or industries may have established definitions of harm or established documentation, reporting, and disclosure requirements. Within sectors, risk management may depend on existing guidelines for specific applications and use case settings. Where established guidelines do not exist, organizations should define reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used to manage risks and to document risk management processes.",
+        "metadata": {
+          "year": 2023,
+          "document_type": "core_framework",
+          "version": "1.0",
+          "language": "en",
+          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "section": "foundational",
+          "raw_chars": 2964,
+          "normalized_chars": 2928,
+          "chunk_length": 801
+        },
+        "score": 8.0,
+        "rank": 3,
+        "strategy": "rewrite_hybrid_rerank",
+        "fusion_ranks": {
+          "original": 10
+        },
+        "base_score": 0.017143,
+        "base_rank": 11,
         "rerank_score": 8.0,
         "hit": false
       }
@@ -1422,7 +1423,7 @@
       "nist-ai-600-1:p017:para:001"
     ],
     "context_chars": 2449,
-    "elapsed_ms": 4333.5,
+    "elapsed_ms": 3997.57,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1440,8 +1441,8 @@
     "rewrite_trace": {
       "raw_query": "Under GOVERN 1.7, what factors should organizations consider when decommissioning a generative AI system?",
       "rewrites": [
-        "GOVERN 1.7 decommissioning generative AI system considerations",
-        "GOVERN 1.7 factors for retiring generative AI systems"
+        "GOVERN 1.7 decommissioning factors for generative AI systems",
+        "GOVERN 1.7 considerations for retiring generative AI models"
       ]
     },
     "gold": [
@@ -1505,10 +1506,10 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 2,
-          "rewrite_1": 2,
-          "rewrite_2": 3
+          "rewrite_1": 4,
+          "rewrite_2": 6
         },
-        "base_score": 0.044956,
+        "base_score": 0.043976,
         "base_rank": 2,
         "rerank_score": 6.0,
         "hit": false
@@ -1536,11 +1537,10 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 3,
-          "rewrite_1": 3,
-          "rewrite_2": 10
+          "rewrite_1": 5
         },
-        "base_score": 0.043175,
-        "base_rank": 3,
+        "base_score": 0.031355,
+        "base_rank": 4,
         "rerank_score": 3.0,
         "hit": false
       }
@@ -1552,7 +1552,7 @@
       "nist-ai-100-1:p028:para:000"
     ],
     "context_chars": 2773,
-    "elapsed_ms": 5017.27,
+    "elapsed_ms": 4966.44,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1570,8 +1570,8 @@
     "rewrite_trace": {
       "raw_query": "When evaluating safety under MEASURE 2.6, what failure behavior is required if a generative AI system operates past its knowledge limits?",
       "rewrites": [
-        "MEASURE 2.6 safety evaluation failure behavior for generative AI beyond knowledge limits",
-        "required failure modes under MEASURE 2.6 for generative AI exceeding knowledge boundaries"
+        "MEASURE 2.6 safety evaluation failure behavior generative AI knowledge limits",
+        "failure modes generative AI beyond knowledge boundary MEASURE 2.6"
       ]
     },
     "gold": [
@@ -1599,7 +1599,7 @@
           "document_type": "genai_profile",
           "normalized_chars": 2413
         },
-        "score": 9.0,
+        "score": 10.0,
         "cosine_distance": 0.360908,
         "rank": 1,
         "strategy": "rewrite_hybrid_rerank",
@@ -1609,8 +1609,8 @@
           "rewrite_2": 4
         },
         "base_score": 0.045287,
-        "base_rank": 1,
-        "rerank_score": 9.0,
+        "base_rank": 2,
+        "rerank_score": 10.0,
         "hit": true
       },
       {
@@ -1630,48 +1630,47 @@
           "document_type": "core_framework",
           "normalized_chars": 2030
         },
-        "score": 9.0,
+        "score": 10.0,
         "cosine_distance": 0.413698,
         "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 3,
-          "rewrite_1": 4,
+          "rewrite_1": 3,
           "rewrite_2": 2
         },
-        "base_score": 0.044451,
-        "base_rank": 4,
-        "rerank_score": 9.0,
+        "base_score": 0.044649,
+        "base_rank": 3,
+        "rerank_score": 10.0,
         "hit": false
       },
       {
-        "id": "nist-ai-600-1:p035:para:000",
-        "source_id": "nist-ai-600-1",
-        "source": "starter/data/NIST.AI.600-1.pdf",
-        "page": 35,
-        "text": "MS-2.3-004 Utilize a purpose-built testing environment such as NIST Dioptra to empirically evaluate GAI trustworthy characteristics.\n\nCBRN Information or Capabilities; Data Privacy; Confabulation; Information Integrity; Information Security; Dangerous, Violent, or Hateful Content; Harmful Bias and Homogenization\n\nAI Actor Tasks: AI Deployment, TEVV\n\nMEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the conditions under which the technology was developed are documented.\n\nAction ID Suggested Action Risks\n\nMS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments. Human-AI Configuration; Confabulation\n\nMS-2.5-002 Document the extent to which human domain knowledge is employed to improve GAI system performance, via, e.g., RLHF, fine-tuning, retrieval-augmented generation, content moderation, business rules.\n\nHuman-AI Configuration",
+        "id": "nist-ai-100-1:p019:para:002",
+        "source_id": "nist-ai-100-1",
+        "source": "starter/data/NIST.AI.100-1.pdf",
+        "page": 19,
+        "text": "Validity and reliability for deployed AI systems are often assessed by ongoing testing or monitoring that confirms a system is performing as intended. Measurement of validity, accuracy, robustness, and reliability contribute to trustworthiness and should take into consideration that certain types of failures can cause greater harm. AI risk management efforts should prioritize the minimization of potential negative impacts, and may need to include human intervention in cases where the AI system cannot detect or correct errors.\n\n3.2 Safe AI systems should “not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered” (Source: ISO /IEC TS 5723:2022). Safe operation of AI systems is improved through:\n\n• responsible design, development, and deployment practices;\n\n• clear information to deployers on responsible use of the system;\n\n• responsible decision-making by deployers and end users; and",
         "metadata": {
-          "year": 2024,
-          "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
-          "section": "measure",
-          "version": "NIST AI 600-1 (Final)",
+          "year": 2023,
+          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "section": "foundational",
+          "version": "1.0",
           "language": "en",
-          "raw_chars": 1846,
-          "chunk_length": 982,
-          "document_type": "genai_profile",
-          "normalized_chars": 1829
+          "raw_chars": 2784,
+          "chunk_length": 955,
+          "document_type": "core_framework",
+          "normalized_chars": 2752
         },
         "score": 2.0,
-        "cosine_distance": 0.388062,
+        "cosine_distance": 0.418843,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
-          "original": 4,
-          "rewrite_1": 3,
-          "rewrite_2": 1
+          "original": 11,
+          "rewrite_1": 12
         },
-        "base_score": 0.044563,
-        "base_rank": 3,
+        "base_score": 0.028013,
+        "base_rank": 9,
         "rerank_score": 2.0,
         "hit": false
       }
@@ -1682,7 +1681,7 @@
       "nist-ai-600-1:p035:para:001"
     ],
     "context_chars": 1849,
-    "elapsed_ms": 4970.68,
+    "elapsed_ms": 4428.26,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1701,7 +1700,7 @@
       "raw_query": "Why are anecdotal tests like video games or human professional licensing exams insufficient to establish generative AI validity and reliability before deployment?",
       "rewrites": [
         "limitations of anecdotal testing for generative AI validation",
-        "insufficiency of professional exam analogies in AI reliability assessment"
+        "insufficiency of professional exams and video games in AI reliability assessment"
       ]
     },
     "gold": [
@@ -1736,9 +1735,9 @@
         "fusion_ranks": {
           "original": 2,
           "rewrite_1": 4,
-          "rewrite_2": 4
+          "rewrite_2": 2
         },
-        "base_score": 0.044355,
+        "base_score": 0.044758,
         "base_rank": 1,
         "rerank_score": 9.5,
         "hit": true
@@ -1767,9 +1766,9 @@
         "fusion_ranks": {
           "original": 3,
           "rewrite_1": 1,
-          "rewrite_2": 12
+          "rewrite_2": 7
         },
-        "base_score": 0.043273,
+        "base_score": 0.044103,
         "base_rank": 2,
         "rerank_score": 9.0,
         "hit": false
@@ -1797,9 +1796,9 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 10,
-          "rewrite_2": 9
+          "rewrite_2": 10
         },
-        "base_score": 0.028737,
+        "base_score": 0.028571,
         "base_rank": 8,
         "rerank_score": 5.0,
         "hit": false
@@ -1812,7 +1811,7 @@
       "nist-ai-600-1:p053:para:001"
     ],
     "context_chars": 2577,
-    "elapsed_ms": 5777.7,
+    "elapsed_ms": 4823.48,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1945,7 +1944,7 @@
       "nist-ai-600-1:p017:para:002"
     ],
     "context_chars": 1830,
-    "elapsed_ms": 5030.84,
+    "elapsed_ms": 4967.08,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -1967,7 +1966,7 @@
       "raw_query": "In the 2023 AI RMF GOVERN section, how are governance roles divided across governing authorities, senior leadership, and management?",
       "rewrites": [
         "2023 AI RMF GOVERN roles division among governing authorities, senior leadership, management",
-        "AI RMF 2023 GOVERN section governance role allocation by authority level"
+        "AI RMF 2023 GOVERN governance roles allocation by authority level"
       ]
     },
     "gold": [
@@ -2002,10 +2001,10 @@
         "fusion_ranks": {
           "original": 1,
           "rewrite_1": 2,
-          "rewrite_2": 3
+          "rewrite_2": 6
         },
-        "base_score": 0.045274,
-        "base_rank": 1,
+        "base_score": 0.044697,
+        "base_rank": 2,
         "rerank_score": 9.0,
         "hit": true
       },
@@ -2026,18 +2025,18 @@
           "document_type": "core_framework",
           "normalized_chars": 2271
         },
-        "score": 3.0,
+        "score": 7.0,
         "cosine_distance": 0.392986,
         "rank": 2,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 2,
           "rewrite_1": 1,
-          "rewrite_2": 4
+          "rewrite_2": 1
         },
-        "base_score": 0.04497,
-        "base_rank": 2,
-        "rerank_score": 3.0,
+        "base_score": 0.045584,
+        "base_rank": 1,
+        "rerank_score": 7.0,
         "hit": false
       },
       {
@@ -2057,18 +2056,18 @@
           "document_type": "core_framework",
           "normalized_chars": 2407
         },
-        "score": 2.0,
+        "score": 5.0,
         "cosine_distance": 0.411833,
         "rank": 3,
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 3,
           "rewrite_1": 3,
-          "rewrite_2": 1
+          "rewrite_2": 3
         },
-        "base_score": 0.044861,
+        "base_score": 0.044444,
         "base_rank": 3,
-        "rerank_score": 2.0,
+        "rerank_score": 5.0,
         "hit": false
       }
     ],
@@ -2079,7 +2078,7 @@
       "nist-ai-100-1:p027:para:001"
     ],
     "context_chars": 2291,
-    "elapsed_ms": 4201.47,
+    "elapsed_ms": 4181.4,
     "hit1": true,
     "hit3": true,
     "context_hit": true,
@@ -2100,8 +2099,8 @@
     "rewrite_trace": {
       "raw_query": "What warning mechanisms and risk reassessment steps are recommended when adapting a generative AI model to a new domain?",
       "rewrites": [
-        "Generative AI domain adaptation risk management and warning mechanisms",
-        "Risk reassessment and monitoring protocols for generative AI domain transfer"
+        "generative AI domain adaptation risk management steps",
+        "warning mechanisms and risk reassessment for generative AI domain transfer"
       ]
     },
     "gold": [
@@ -2135,11 +2134,11 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 1,
-          "rewrite_1": 1,
-          "rewrite_2": 8
+          "rewrite_1": 6,
+          "rewrite_2": 1
         },
-        "base_score": 0.044552,
-        "base_rank": 3,
+        "base_score": 0.044908,
+        "base_rank": 2,
         "rerank_score": 10.0,
         "hit": true
       },
@@ -2166,8 +2165,8 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 3,
-          "rewrite_1": 2,
-          "rewrite_2": 1
+          "rewrite_1": 1,
+          "rewrite_2": 2
         },
         "base_score": 0.045066,
         "base_rank": 1,
@@ -2197,11 +2196,11 @@
         "strategy": "rewrite_hybrid_rerank",
         "fusion_ranks": {
           "original": 2,
-          "rewrite_1": 5,
-          "rewrite_2": 2
+          "rewrite_1": 2,
+          "rewrite_2": 5
         },
         "base_score": 0.044566,
-        "base_rank": 2,
+        "base_rank": 3,
         "rerank_score": 0.0,
         "hit": false
       }
@@ -2213,7 +2212,7 @@
       "nist-ai-600-1:p030:para:000"
     ],
     "context_chars": 2744,
-    "elapsed_ms": 2737.91,
+    "elapsed_ms": 2617.61,
     "hit1": true,
     "hit3": true,
     "context_hit": true,

@@ -1,0 +1,26 @@
+{
+  "doc_id": "gemini-1-5-report",
+  "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+  "version": "arXiv:2403.05530v5 (Dec 2024)",
+  "source_url": "https://arxiv.org/pdf/2403.05530.pdf",
+  "license": "arXiv.org perpetual, non-exclusive license / Google DeepMind Technical Report (public access)",
+  "total_pages": 154,
+  "pages_indexed": 154,
+  "total_regions_cropped": 71,
+  "total_chunks": 558,
+  "chunks_by_modality": {
+    "text": 487,
+    "table": 48,
+    "chart": 16,
+    "image_diagram": 7
+  },
+  "chunks_by_section": {
+    "front_matter": 7,
+    "main_body": 311,
+    "references": 75,
+    "contributors_acknowledgments": 18,
+    "appendix": 147
+  },
+  "vision_indexing": {},
+  "elapsed_s": 0.06
+}

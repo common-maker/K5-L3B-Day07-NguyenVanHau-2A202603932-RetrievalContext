@@ -6,9 +6,7 @@ import re
 import time
 from typing import Any
 
-from openai import OpenAI
-
-from .config import ALLOWED_FILTERS, estimate_chat_cost_usd
+from .config import ALLOWED_FILTERS, create_openai_client, estimate_chat_cost_usd
 from .context import ChunkCorpusIndex, pack_context
 from .retrievers import BaseRetriever
 
@@ -176,7 +174,7 @@ class AgenticRagRunner:
     ) -> None:
         if not api_key.strip():
             raise RuntimeError("OPENAI_API_KEY is empty; real agent execution requires a valid key.")
-        self.client = OpenAI(api_key=api_key)
+        self.client = create_openai_client(api_key)
         self.model = model
         self.primary_retriever = primary_retriever
         self.lexical_retriever = lexical_retriever
@@ -231,6 +229,7 @@ class AgenticRagRunner:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 temperature=0.0,
+                seed=42,
                 tools=tools,
                 tool_choice="required",
                 messages=messages,

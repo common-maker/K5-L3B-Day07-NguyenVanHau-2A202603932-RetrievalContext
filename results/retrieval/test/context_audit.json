@@ -11,7 +11,7 @@
       "baseline_grade": 0,
       "baseline_reason": "Rank-1 gold nist-ai-100-1:p020:para:001 (883 chars) dropped by 800-char budget; packed unrelated p006:para:001.",
       "selected_grade": 2,
-      "selected_reason": "Packed both p020:para:001 and p020:para:002 with source/page metadata covering resilience and security definitions."
+      "selected_reason": "Packed both p020:para:002 and p020:para:001 with source/page metadata covering resilience and security definitions."
     },
     {
       "query_id": "q19",
